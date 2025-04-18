@@ -480,7 +480,7 @@ const App = () => {
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                   >
                     <img
-                      src="/portfolio/snake.png"
+                      src="/snake.png"
                       alt="The Red Serpent Profile"
                       className="w-full h-full"
                     />
@@ -776,7 +776,7 @@ const App = () => {
                 >
                   <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center group-hover:bg-gray-900 transition-colors duration-300">
                     <img 
-                      src="/portfolio/THM.png" 
+                      src="/THM.png" 
                       alt="TryHackMe" 
                       className="w-12 h-12 filter brightness-100"
                     />
@@ -794,7 +794,7 @@ const App = () => {
                 >
                   <div className="w-16 h-16 rounded-full bg-[#111927] flex items-center justify-center group-hover:bg-[#1A2332] transition-colors duration-300">
                     <img 
-                      src="/portfolio/htb.png" 
+                      src="/htb.png" 
                       alt="HackTheBox" 
                       className="w-12 h-12"
                     />
