@@ -1,0 +1,284 @@
+/* Custom Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(238, 28, 37, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(238, 28, 37, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(238, 28, 37, 0);
+  }
+}
+
+@keyframes glowText {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(238, 28, 37, 0.5),
+                 0 0 20px rgba(238, 28, 37, 0.3),
+                 0 0 30px rgba(238, 28, 37, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(238, 28, 37, 0.7),
+                 0 0 30px rgba(238, 28, 37, 0.5),
+                 0 0 40px rgba(238, 28, 37, 0.3);
+  }
+}
+
+@keyframes borderGlow {
+  0%, 100% {
+    border-color: rgba(238, 28, 37, 0.5);
+    box-shadow: 0 0 10px rgba(238, 28, 37, 0.3);
+  }
+  50% {
+    border-color: rgba(238, 28, 37, 0.8);
+    box-shadow: 0 0 20px rgba(238, 28, 37, 0.5);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+  20%, 40%, 60%, 80% { transform: translateX(2px); }
+}
+
+/* Custom Classes */
+.glass-effect {
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(238, 28, 37, 0.2);
+  transition: all 0.3s ease;
+}
+
+.glass-effect:hover {
+  border-color: rgba(238, 28, 37, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #DC2626, #F87171);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse-effect {
+  animation: pulse 2s infinite;
+}
+
+.hover-shake:hover {
+  animation: shake 0.5s ease-in-out;
+}
+
+.glow-on-hover {
+  transition: all 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  text-shadow: 0 0 10px rgba(238, 28, 37, 0.5),
+               0 0 20px rgba(238, 28, 37, 0.3);
+}
+
+.card-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(238, 28, 37, 0.1);
+}
+
+.border-glow {
+  animation: borderGlow 2s infinite;
+}
+
+/* Skill bar animation */
+.skill-bar-fill {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Button hover effects */
+.button-hover-effect {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.button-hover-effect::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(238, 28, 37, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.button-hover-effect:hover::before {
+  width: 300%;
+  height: 300%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EE1C25;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DC2626;
+}
+
+/* Custom Selection */
+::selection {
+  background: #EE1C25;
+  color: white;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover effects for navigation items */
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(45deg, #ff0000, #ff6b6b);
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.typing-animation {
+  position: relative;
+  width: fit-content;
+}
+
+.typing-animation::before,
+.typing-animation::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typing-animation::before {
+  background: #111827;
+  animation: typewriter 2s steps(20) 1s forwards;
+}
+
+.typing-animation::after {
+  width: 0.125em;
+  background: #EF4444;
+  animation: typewriter 2s steps(20) 1s forwards,
+             blink 750ms steps(20) infinite;
+}
+
+.typing-animation-2 {
+  position: relative;
+  width: fit-content;
+}
+
+.typing-animation-2::before,
+.typing-animation-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typing-animation-2::before {
+  background: #111827;
+  animation: typewriter 2.5s steps(35) 2.5s forwards;
+}
+
+.typing-animation-2::after {
+  width: 0.125em;
+  background: #EF4444;
+  animation: typewriter 2.5s steps(35) 2.5s forwards,
+             blink 750ms steps(35) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+/* Remove old typing animations */
+.typing-text, .typing-text-delayed {
+  display: none;
+} 
