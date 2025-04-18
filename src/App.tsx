@@ -323,7 +323,7 @@ const App = () => {
               >
                 <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white">
                   <img 
-                    src="/portfolio/snake.png" 
+                    src="/snake.png" 
                     alt="The Red Serpent Logo" 
                     className="w-8 h-8"
                   />
