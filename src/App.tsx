@@ -824,5 +824,4 @@ const App = () => {
     </div>
   );
 };
-
-export default App;  nah gimme fully updated code
+export default App;
