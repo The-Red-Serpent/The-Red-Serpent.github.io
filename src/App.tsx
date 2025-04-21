@@ -434,15 +434,15 @@ const App = () => {
                       animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
                   >
-              <Typewriter
-                  words={['Cybersecurity Engineer', 'Pentester', 'Network Wizard', 'Red Team Operator']}
-                  loop={0}
-                  cursor
-                  cursorStyle="|"
-                  typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1500}
-                  />
+                  <Typewriter
+                      words={['Cybersecurity Engineer', 'Pentester', 'Network Wizard', 'Red Team Operator']}
+                      loop={0}
+                      cursor
+                      cursorStyle="|"
+                      typeSpeed={70}
+                      deleteSpeed={50}
+                      delaySpeed={1500}
+                      />
             </motion.h2>
 
                   <motion.p
