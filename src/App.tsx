@@ -816,10 +816,9 @@ const App = () => {
             </div>
           </section>
         </main>
-        <footer className="text-center text-sm text-gray-500 py-4">
-  © {new Date().getFullYear()} The Red Serpent. All rights reserved.
-</footer>
-
+          <footer className="text-center text-sm text-gray-500 py-4">
+              © {new Date().getFullYear()} The Red Serpent. All rights reserved.
+          </footer>
       </div>
     </div>
   );
