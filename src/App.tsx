@@ -721,107 +721,114 @@ const App = () => {
             </div>
           </section>
 
-          {/* Contact Section */}
-          <section id="contact" className="min-h-[80vh] py-4 md:py-6">
-            <div className="max-w-4xl mx-auto px-4 text-center">
-              <motion.h2 
-                className="text-3xl md:text-4xl font-bold mb-8 gradient-text"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+const App = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <main className="flex-grow pt-4">
+        {/* Contact Section */}
+        <section id="contact" className="min-h-[80vh] py-4 md:py-6">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <motion.h2
+              className="text-3xl md:text-4xl font-bold mb-8 gradient-text"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              Get in Touch
+            </motion.h2>
+            <motion.p
+              className="text-gray-300 text-lg mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            >
+              Connect with me on various platforms
+            </motion.p>
+            <motion.div
+              className="flex flex-wrap justify-center gap-6 md:gap-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            >
+              <motion.a
+                href="https://github.com/The-Red-Serpent"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -5 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex flex-col items-center group"
               >
-                Get in Touch
-              </motion.h2>
-              <motion.p 
-                className="text-gray-300 text-lg mb-12"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                <div className="w-16 h-16 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-gray-700 transition-colors duration-300">
+                  <FaGithub className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
+                </div>
+                <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">
+                  GitHub
+                </span>
+              </motion.a>
+
+              <motion.a
+                href="https://instagram.com/the_red_serpent"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -5 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex flex-col items-center group"
               >
-                Connect with me on various platforms
-              </motion.p>
-              <motion.div 
-                className="flex flex-wrap justify-center gap-6 md:gap-8"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+                <div className="w-16 h-16 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-gray-700 transition-colors duration-300">
+                  <FaInstagram className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
+                </div>
+                <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">
+                  Instagram
+                </span>
+              </motion.a>
+
+              <motion.a
+                href="https://tryhackme.com/p/theredserpent"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -5 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex flex-col items-center group"
               >
-                <motion.a
-                  href="https://github.com/The-Red-Serpent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex flex-col items-center group"
-                >
-                  <div className="w-16 h-16 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-gray-700 transition-colors duration-300">
-                    <FaGithub className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
-                  </div>
-                  <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">GitHub</span>
-                </motion.a>
+                <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center group-hover:bg-gray-900 transition-colors duration-300">
+                  <img
+                    src="/THM.png"
+                    alt="TryHackMe"
+                    className="w-12 h-12 filter brightness-100"
+                  />
+                </div>
+                <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">
+                  TryHackMe
+                </span>
+              </motion.a>
 
-                <motion.a
-                  href="https://instagram.com/the_red_serpent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex flex-col items-center group"
-                >
-                  <div className="w-16 h-16 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-gray-700 transition-colors duration-300">
-                    <FaInstagram className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
-                  </div>
-                  <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">Instagram</span>
-                </motion.a>
-
-                <motion.a
-                  href="https://tryhackme.com/p/theredserpent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex flex-col items-center group"
-                >
-                  <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center group-hover:bg-gray-900 transition-colors duration-300">
-                    <img 
-                      src="/THM.png" 
-                      alt="TryHackMe" 
-                      className="w-12 h-12 filter brightness-100"
-                    />
-                  </div>
-                  <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">TryHackMe</span>
-                </motion.a>
-
-                <motion.a
-                  href="https://app.hackthebox.com/profile/2230478"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex flex-col items-center group"
-                >
-                  <div className="w-16 h-16 rounded-full bg-[#111927] flex items-center justify-center group-hover:bg-[#1A2332] transition-colors duration-300">
-                    <img 
-                      src="/htb.png" 
-                      alt="HackTheBox" 
-                      className="w-12 h-12"
-                    />
-                  </div>
-                  <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">HackTheBox</span>
-                </motion.a>
-              </motion.div>
-            </div>
-          </section>
-        </main>
-          <footer className="text-center text-sm text-gray-500 py-4">
-              © {new Date().getFullYear()} The Red Serpent. All rights reserved.
-          </footer>
-      </div>
+              <motion.a
+                href="https://app.hackthebox.com/profile/2230478"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -5 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex flex-col items-center group"
+              >
+                <div className="w-16 h-16 rounded-full bg-[#111927] flex items-center justify-center group-hover:bg-[#1A2332] transition-colors duration-300">
+                  <img src="/htb.png" alt="HackTheBox" className="w-12 h-12" />
+                </div>
+                <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">
+                  HackTheBox
+                </span>
+              </motion.a>
+            </motion.div>
+          </div>
+        </section>
+      </main>
+      <footer className="text-center text-sm text-gray-500 py-4">
+        © {new Date().getFullYear()} The Red Serpent. All rights reserved.
+      </footer>
     </div>
   );
 };
 
-export default App; 
+export default App;
