@@ -722,7 +722,7 @@ const App = () => {
           </section>
 
           {/* Contact Section */}
-          <section id="contact" className="min-h-[80vh] py-6 md:py-8">
+          <section id="contact" className="min-h-[80vh] py-4 md:py-6">
             <div className="max-w-4xl mx-auto px-4 text-center">
               <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-8 gradient-text"
@@ -816,6 +816,10 @@ const App = () => {
             </div>
           </section>
         </main>
+        <footer className="text-center text-sm text-gray-500 py-4">
+  © {new Date().getFullYear()} The Red Serpent. All rights reserved.
+</footer>
+
       </div>
     </div>
   );
