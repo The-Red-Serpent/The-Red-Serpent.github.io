@@ -737,6 +737,7 @@ const App = () => {
             >
               Get in Touch
             </motion.h2>
+
             <motion.p
               className="text-gray-300 text-lg mb-12"
               initial={{ opacity: 0, y: 20 }}
@@ -746,6 +747,7 @@ const App = () => {
             >
               Connect with me on various platforms
             </motion.p>
+
             <motion.div
               className="flex flex-wrap justify-center gap-6 md:gap-8"
               initial={{ opacity: 0, y: 20 }}
@@ -753,6 +755,7 @@ const App = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             >
+              {/* GitHub */}
               <motion.a
                 href="https://github.com/The-Red-Serpent"
                 target="_blank"
@@ -769,6 +772,7 @@ const App = () => {
                 </span>
               </motion.a>
 
+              {/* Instagram */}
               <motion.a
                 href="https://instagram.com/the_red_serpent"
                 target="_blank"
@@ -785,6 +789,7 @@ const App = () => {
                 </span>
               </motion.a>
 
+              {/* TryHackMe */}
               <motion.a
                 href="https://tryhackme.com/p/theredserpent"
                 target="_blank"
@@ -805,6 +810,7 @@ const App = () => {
                 </span>
               </motion.a>
 
+              {/* HackTheBox */}
               <motion.a
                 href="https://app.hackthebox.com/profile/2230478"
                 target="_blank"
@@ -824,6 +830,8 @@ const App = () => {
           </div>
         </section>
       </main>
+
+      {/* Footer */}
       <footer className="text-center text-sm text-gray-500 py-4">
         © {new Date().getFullYear()} The Red Serpent. All rights reserved.
       </footer>
