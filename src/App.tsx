@@ -491,7 +491,7 @@ const App = () => {
           </section>
 
           {/* Skills Section with Parallax */}
-          <section id="skills" className="min-h-[90vh] py-6 md:py-8">
+          <section id="skills" className="min-h-[90vh] py-4 md:py-6">
             <div className="max-w-6xl mx-auto px-4">
               <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-12 gradient-text text-center"
