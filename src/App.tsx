@@ -721,8 +721,7 @@ const App = () => {
             </div>
           </section>
 
-const App = () => {
-  return (
+          
     <div className="min-h-screen flex flex-col">
       <main className="flex-grow pt-4">
         {/* Contact Section */}
