@@ -408,7 +408,7 @@ const App = () => {
 
         <main className="pt-16">
           {/* Hero/About Section with Parallax */}
-          <section id="about" className="min-h-[90vh] py-6 md:py-8">
+          <section id="about" className="min-h-[90vh] py-4 md:py-6">
             <div className="max-w-7xl mx-auto px-4">
               <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-20">
                 {/* Left Column - Text Content with Parallax */}
