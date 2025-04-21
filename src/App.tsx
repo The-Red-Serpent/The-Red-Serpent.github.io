@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { Typewriter } from 'react-simple-typewriter';
+
 import { motion } from 'framer-motion';
 import { 
   FaGithub, 
@@ -426,14 +428,23 @@ const App = () => {
                   >
                     {aboutContent.intro}
                   </motion.h1>
-                  <motion.h2 
-                    className="text-xl md:text-3xl font-bold mb-6"
+                 <motion.h2
+                    className="text-xl md:text-3xl font-bold mb-6 text-white"
                     initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+                      animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
                   >
-                    <span className="text-white">Cybersecurity & Network Engineer</span>
-                  </motion.h2>
+              <Typewriter
+                  words={['Cybersecurity Engineer', 'Pentester', 'Network Wizard', 'Red Team Operator']}
+                  loop={0}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+                  />
+            </motion.h2>
+
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
