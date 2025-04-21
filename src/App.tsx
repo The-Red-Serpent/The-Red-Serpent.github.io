@@ -435,7 +435,7 @@ const App = () => {
                     transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
                   >
                   <Typewriter
-                      words={['Cybersecurity Engineer', 'Pentester', 'Network Wizard', 'Red Team Operator']}
+                      words={['Cybersecurity Engineer', 'Pentester', 'Network Wizard','System Admin', 'Red Team Operator']}
                       loop={0}
                       cursor
                       cursorStyle="|"
