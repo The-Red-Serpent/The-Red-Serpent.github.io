@@ -45,9 +45,9 @@ const App = () => {
   const programmingSkills: Skill[] = [
     { name: 'Python', proficiency: 90, icon: <FaPython className="text-xl" /> },
     { name: 'C', proficiency: 85, icon: <SiC className="text-xl" /> },
-    { name: 'Bash', proficiency: 88, icon: <SiGnubash className="text-xl" /> },
-    { name: 'PowerShell', proficiency: 85, icon: <SiPowershell className="text-xl" /> },
-    { name: 'JavaScript', proficiency: 75, icon: <SiJavascript className="text-xl" /> },
+    { name: 'Bash', proficiency: 50, icon: <SiGnubash className="text-xl" /> },
+    { name: 'PowerShell', proficiency: 50, icon: <SiPowershell className="text-xl" /> },
+    { name: 'JavaScript', proficiency: 60, icon: <SiJavascript className="text-xl" /> },
   ];
 
   const pentestingSkills: Skill[] = [
