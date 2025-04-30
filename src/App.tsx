@@ -145,6 +145,11 @@ const App = () => {
       title: "API Penetration Testing",
       issuer: "APISEC University",
       badgeUrl: "https://images.credly.com/size/680x680/images/44a5fe44-52e6-45c2-ae9a-41fd9183c81d/image.png"
+    },
+     {
+      title: "Certified Red Team Analyst",
+      issuer: "Cyberwarfare Labs - Pursuing",
+      badgeUrl: "https://templates.images.credential.net/17043567286076012013649409456004.png"
     }
   ];
 
