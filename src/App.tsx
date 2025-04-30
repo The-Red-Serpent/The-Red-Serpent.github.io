@@ -144,7 +144,7 @@ const App = () => {
     {
       title: "API Penetration Testing",
       issuer: "APISEC University",
-      badgeUrl: "https://github.com/The-Red-Serpent/The-Red-Serpent.github.io/blob/main/public/apisec-removebg-preview.png"
+      badgeUrl: "https://raw.githubusercontent.com/The-Red-Serpent/The-Red-Serpent.github.io/main/public/apisec-removebg-preview.png"
     },
      {
       title: "Certified Red Team Analyst",
