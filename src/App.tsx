@@ -122,35 +122,32 @@ const App = () => {
 
   const certifications = [
     {
-      title: "Certified Red Team Analyst",
-      issuer: "Cyberwarfare Labs - Pursuing",
-      badgeUrl: "https://templates.images.credential.net/17043567286076012013649409456004.png"
-    },
-    {
-      title: "IBM Cybersecurity Fundamentals",
-      issuer: "IBM",
-      badgeUrl: "https://images.credly.com/size/680x680/images/50b96632-6cbb-40b7-ac0e-b83f49ff7f94/image.png"
-    },
-    {
-      title: "Cisco Networking Basics",
-      issuer: "Cisco Networking Academy",
-      badgeUrl: "https://images.credly.com/size/680x680/images/5bdd6a39-3e03-4444-9510-ecff80c9ce79/image.png"
-    },
-    {
-      title: "Cisco Ethical Hacker",
-      issuer: "Cisco Networking Academy",
-      badgeUrl: "https://images.credly.com/size/680x680/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png"
-    },
-    {
       title: "Fortinet Certified Associate - Cybersecurity",
       issuer: "Fortinet",
       badgeUrl: "https://images.credly.com/size/340x340/images/20082fc1-94af-4773-9df0-28856b566748/image.png"
     },
     {
+      title: "Certified Network Security Practitioner",
+      issuer: "The SecOps Group",
+      badgeUrl: "https://secops.group/wp-content/uploads/2023/02/Certified-Network-Security-Practitioner-whbg.png"
+    },
+    {
       title: "API Penetration Testing",
       issuer: "APISEC University",
       badgeUrl: "https://raw.githubusercontent.com/The-Red-Serpent/The-Red-Serpent.github.io/main/public/apisec-removebg-preview.png"
+    },
+    
+    {
+      title: "Certified Red Team Analyst",
+      issuer: "Cyberwarfare Labs",
+      badgeUrl: "https://templates.images.credential.net/17043567286076012013649409456004.png"
+    },
+    {
+      title: "Cisco Ethical Hacker",
+      issuer: "Cisco Networking Academy",
+      badgeUrl: "https://images.credly.com/size/680x680/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png"
     }
+    
      
   ];
 
