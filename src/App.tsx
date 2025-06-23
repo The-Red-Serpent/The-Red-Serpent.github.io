@@ -125,7 +125,7 @@ const App = () => {
       title: "Certified Red Team Analyst",
       issuer: "Cyberwarfare Labs - Pursuing",
       badgeUrl: "https://templates.images.credential.net/17043567286076012013649409456004.png"
-    }
+    },
     {
       title: "IBM Cybersecurity Fundamentals",
       issuer: "IBM",
@@ -150,7 +150,7 @@ const App = () => {
       title: "API Penetration Testing",
       issuer: "APISEC University",
       badgeUrl: "https://raw.githubusercontent.com/The-Red-Serpent/The-Red-Serpent.github.io/main/public/apisec-removebg-preview.png"
-    },
+    }
      
   ];
 
