@@ -95,12 +95,12 @@ const App = () => {
       tags: ['Python', 'Tor Network', 'Security']
     },
     {
-      title: 'AGONY',
-      description: 'Stealthy ARP-based network scanner for device discovery',
-      githubUrl: 'https://github.com/The-Red-Serpent/AGONY',
-      status: 'New',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop',
-      tags: ['Python', 'ARP', 'Network Scanning']
+      title: 'Envy',
+      description: 'PowerShell script designed to enumerate Windows systems and Active Directory environments',
+      githubUrl: 'https://github.com/The-Red-Serpent/Envy',
+      status: 'Active',
+      image: 'https://user-images.githubusercontent.com/100603074/210680426-20a92131-56f9-43ad-be82-f449e3215dda.png1?q=80&w=2034&auto=format&fit=crop',
+      tags: ['Powershell', 'Active Directory', 'Enumeration']
     },
     {
       title: 'Wrath',
@@ -114,7 +114,7 @@ const App = () => {
       title: 'Keylogger-Using-CPP',
       description: 'Advanced keylogger with encryption capabilities',
       githubUrl: 'https://github.com/The-Red-Serpent/Keylogger-Using-CPP',
-      status: 'In Progress',
+      status: 'Active',
       image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop',
       tags: ['C++', 'Windows API', 'Security']
     }
