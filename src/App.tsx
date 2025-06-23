@@ -122,6 +122,11 @@ const App = () => {
 
   const certifications = [
     {
+      title: "Certified Red Team Analyst",
+      issuer: "Cyberwarfare Labs - Pursuing",
+      badgeUrl: "https://templates.images.credential.net/17043567286076012013649409456004.png"
+    }
+    {
       title: "IBM Cybersecurity Fundamentals",
       issuer: "IBM",
       badgeUrl: "https://images.credly.com/size/680x680/images/50b96632-6cbb-40b7-ac0e-b83f49ff7f94/image.png"
@@ -146,11 +151,7 @@ const App = () => {
       issuer: "APISEC University",
       badgeUrl: "https://raw.githubusercontent.com/The-Red-Serpent/The-Red-Serpent.github.io/main/public/apisec-removebg-preview.png"
     },
-     {
-      title: "Certified Red Team Analyst",
-      issuer: "Cyberwarfare Labs - Pursuing",
-      badgeUrl: "https://templates.images.credential.net/17043567286076012013649409456004.png"
-    }
+     
   ];
 
   const aboutContent = {
