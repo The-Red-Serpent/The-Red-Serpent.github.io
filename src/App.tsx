@@ -99,7 +99,7 @@ const App = () => {
       description: 'PowerShell script designed to enumerate Windows systems and Active Directory environments',
       githubUrl: 'https://github.com/The-Red-Serpent/Envy',
       status: 'Active',
-      image: 'https://user-images.githubusercontent.com/100603074/210680426-20a92131-56f9-43ad-be82-f449e3215dda.png1?q=80&w=2034&auto=format&fit=crop',
+      image: 'https://user-images.githubusercontent.com/100603074/210680426-20a92131-56f9-43ad-be82-f449e3215dda.png1',
       tags: ['Powershell', 'Active Directory', 'Enumeration']
     },
     {
