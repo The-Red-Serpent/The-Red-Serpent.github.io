@@ -152,7 +152,7 @@ const App = () => {
   ];
 
   const aboutContent = {
-    intro: "Hi, I'm The Red Serpent",
+    intro: "Hi, I'm Red Serpent",
     role: "Cybersecurity and Network Engineer",
     description: "Passionate about ethical hacking and digital security, diving deep into Active Directory and Web Security. Armed with penetration testing tools and a hunger for knowledge, I'm on a mission to master the art of cybersecurity. Let's hack the planet! 🌐",
   };
