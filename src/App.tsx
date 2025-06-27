@@ -413,8 +413,8 @@ const App = () => {
 
         <main className="pt-16">
           {/* Hero/About Section with Parallax */}
-          <section id="about" className="min-h-[90vh] py-4 md:py-6">
-            <div className="max-w-7xl mx-auto px-4">
+          <section id="about" className="pt-16">
+            <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-20">
                 {/* Left Column - Text Content with Parallax */}
                 <motion.div
@@ -726,7 +726,7 @@ const App = () => {
 
           
   {/* Contact Section */}
-          <section id="contact" className="min-h-[80vh] py-4 md:py-6">
+          <section id="contact" className="py-4 md:py-6">
             <div className="max-w-4xl mx-auto px-4 text-center">
               <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-8 gradient-text"
