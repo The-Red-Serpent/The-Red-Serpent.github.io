@@ -299,8 +299,9 @@ const App = () => {
               value: 0.5,
               animation: {
                 enable: true,
-                speed: 0.5,
+                speed: 1,
                 minimumValue: 0.3,
+                sync: true,
               }
             },
             shape: {
