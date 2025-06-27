@@ -233,87 +233,75 @@ const App = () => {
 
   return (
     <div className="bg-black text-white relative">
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        className="absolute inset-0"
-        options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
+      <div
+  style={{
+    position: "fixed",
+    top: 0,
+    left: "50%",
+    transform: "translateX(-50%)",
+    width: "100vw",
+    maxWidth: "1440px",  // 👈 caps canvas width
+    height: "100vh",
+    zIndex: -1,
+    overflow: "hidden",
+  }}
+>
+  <Particles
+    id="tsparticles"
+    init={particlesInit}
+    options={{
+      fullScreen: false, // 👈 KEY FIX
+      fpsLimit: 30,
+      interactivity: {
+        events: {
+          onClick: { enable: false },
+          onHover: { enable: false },
+          resize: true,
+        },
+        modes: {
+          push: { quantity: 4 },
+          repulse: { distance: 150, duration: 0.4 },
+        },
+      },
+      particles: {
+        color: { value: "#DC2626" },
+        links: {
+          color: "#DC2626",
+          distance: 150,
+          enable: true,
+          opacity: 0.4,
+          width: 1.5,
+        },
+        collisions: { enable: true },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: { default: "bounce" },
+          random: false,
+          speed: 1,
+          straight: false,
+        },
+        number: {
+          density: { enable: true, area: 800 },
+          value: 50, // 🧠 drop from 80 to reduce load
+        },
+        opacity: {
+          value: 0.5,
+          animation: {
+            enable: true,
+            speed: 1,
+            minimumValue: 0.3,
+            sync: true,
           },
-          fpsLimit: 30,
-          interactivity: {
-            events: {
-              onClick: {
-                enable: false
-              },
-              onHover: {
-                enable: false               
-              },
-              resize: true,
-            },
-            modes: {
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 150,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#DC2626",
-            },
-            links: {
-              color: "#DC2626",
-              distance: 150,
-              enable: true,
-              opacity: 0.4,
-              width: 1.5,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 1,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
-              },
-              value: 80,
-            },
-            opacity: {
-              value: 0.5,
-              animation: {
-                enable: true,
-                speed: 1,
-                minimumValue: 0.3,
-                sync: true,
-              }
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1.5, max: 3 },
-            },
-          },
-          detectRetina: true,
-        }}
-      />
+        },
+        shape: { type: "circle" },
+        size: { value: { min: 1.5, max: 3 } },
+      },
+      detectRetina: true,
+    }}
+  />
+</div>
+
       <div className="relative">
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-transparent z-50">
