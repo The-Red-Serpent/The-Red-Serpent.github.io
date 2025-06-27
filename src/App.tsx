@@ -325,13 +325,13 @@ const App = () => {
                 animate={{ opacity: 1, x: 0 }}
                 className="flex items-center space-x-3"
               >
-                <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white">
+                
                   <img 
                     src="/snake.png" 
                     alt="The Red Serpent Logo" 
-                    className="w-8 h-8"
+                    className="w-10 h-10 object-contain"
                   />
-                </div>
+               
                 <span className="text-xl font-bold text-white">The Red Serpent</span>
               </motion.div>
 
