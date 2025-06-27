@@ -247,12 +247,10 @@ const App = () => {
           interactivity: {
             events: {
               onClick: {
-                enable: true,
-                mode: "push",
+                enable: false
               },
               onHover: {
-                enable: true,
-                mode: "repulse",
+                enable: false               
               },
               resize: true,
             },
