@@ -684,15 +684,15 @@ const App = () => {
                 {certifications.map((cert) => (
                   <motion.div
                     key={cert.title}
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true,amount: 0.2 }}
                     whileHover={{ 
                       scale: 1.03,
-                      boxShadow: "0 0 20px rgba(239, 68, 68, 0.2)"
+                      
                     }}
-                    transition={{ duration: 0.3 }}
-                    className="bg-gray-900/50 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-gray-800/50 transition-all duration-300"
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    className="bg-gray-900/60 backdrop-blur-md rounded-xl overflow-hidden transition-all duration-300 will-change-transform"
                   >
                     <div className="p-6">
                       <div className="flex flex-col items-center">
@@ -704,6 +704,7 @@ const App = () => {
                           <img 
                             src={cert.badgeUrl} 
                             alt={`${cert.title} Badge`} 
+                            loading="lazy"
                             className="w-28 h-28 object-contain relative z-10"
                           />
                         </motion.div>
