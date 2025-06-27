@@ -316,7 +316,7 @@ const App = () => {
       />
       <div className="relative">
         {/* Navigation */}
-        <nav className="fixed top-0 w-full glass-effect z-50">
+        <nav className="fixed top-0 w-full bg-transparent z-50">
           <div className="w-full px-4 md:px-8">
             <div className="flex items-center justify-between h-16">
               {/* Left side - Logo and Title */}
