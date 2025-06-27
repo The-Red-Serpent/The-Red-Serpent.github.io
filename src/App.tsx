@@ -243,7 +243,7 @@ const App = () => {
               value: "transparent",
             },
           },
-          fpsLimit: 60,
+          fpsLimit: 30,
           interactivity: {
             events: {
               onClick: {
