@@ -232,7 +232,7 @@ const App = () => {
   }, [activeSection]); // Add activeSection as dependency
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative">
+    <div className="bg-black text-white relative">
       <Particles
         id="tsparticles"
         init={particlesInit}
