@@ -146,7 +146,13 @@ const App = () => {
       title: "Cisco Ethical Hacker",
       issuer: "Cisco Networking Academy",
       badgeUrl: "https://images.credly.com/size/680x680/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png"
+    },
+    {
+      title: "Cyber Threat Intelligence 101",
+      issuer: "arcx.io",
+      badgeUrl: "/FTIA-removebg-preview.png"
     }
+    
     
      
   ];
