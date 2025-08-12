@@ -124,12 +124,12 @@ const App = () => {
     {
       title: "Fortinet Certified Associate - Cybersecurity",
       issuer: "Fortinet",
-      badgeUrl: "https://images.credly.com/size/340x340/images/20082fc1-94af-4773-9df0-28856b566748/image.png"
+      badgeUrl: "/fortinet.webp"
     },
     {
       title: "Certified Network Security Practitioner",
       issuer: "The SecOps Group",
-      badgeUrl: "https://secops.group/wp-content/uploads/2023/02/Certified-Network-Security-Practitioner-whbg.png"
+      badgeUrl: "/cnsp.webp"
     },
     {
       title: "API Penetration Testing",
@@ -333,7 +333,7 @@ const App = () => {
               >
                 
                   <img 
-                    src="/snake.png" 
+                    src="/snake.webp" 
                     alt="The Red Serpent Logo" 
                     className="w-10 h-10 object-contain"
                   />
@@ -499,7 +499,7 @@ const App = () => {
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                   >
                     <img
-                      src="/snake.png"
+                      src="/snake.webp"
                       alt="The Red Serpent Profile"
                       className="w-full h-full"
                     />
