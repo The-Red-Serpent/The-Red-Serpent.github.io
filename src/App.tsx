@@ -318,7 +318,7 @@ const App = () => {
           detectRetina: true,
         }}
       />
-      <div className="relative overflow-y-auto">
+      <div className="relative">
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-transparent z-50">
           <div className="w-full px-4 md:px-8">
