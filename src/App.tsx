@@ -134,13 +134,13 @@ const App = () => {
     {
       title: "API Penetration Testing",
       issuer: "APISEC University",
-      badgeUrl: "https://raw.githubusercontent.com/The-Red-Serpent/The-Red-Serpent.github.io/main/public/apisec-removebg-preview.png"
+      badgeUrl: "/apisec.webp"
     },
     
     {
       title: "Certified Red Team Analyst",
       issuer: "Cyberwarfare Labs",
-      badgeUrl: "https://templates.images.credential.net/17043567286076012013649409456004.png"
+      badgeUrl: "/crta.webp"
     },
     {
       title: "Cisco Ethical Hacker",
@@ -150,7 +150,7 @@ const App = () => {
     {
       title: "Cyber Threat Intelligence 101",
       issuer: "arcx.io",
-      badgeUrl: "/FTIA-removebg-preview.png"
+      badgeUrl: "/arc.webp"
     }
     
     
