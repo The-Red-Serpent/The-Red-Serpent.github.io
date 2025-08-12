@@ -47,7 +47,6 @@ const App = () => {
     { name: 'C', proficiency: 85, icon: <SiC className="text-xl" /> },
     { name: 'Bash', proficiency: 50, icon: <SiGnubash className="text-xl" /> },
     { name: 'PowerShell', proficiency: 50, icon: <SiPowershell className="text-xl" /> },
-    
   ];
 
   const pentestingSkills: Skill[] = [
