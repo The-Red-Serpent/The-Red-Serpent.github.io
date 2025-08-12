@@ -24,7 +24,6 @@ import {
   SiC, 
   SiGnubash, 
   SiPowershell, 
-  SiJavascript, 
   SiWireshark
 } from 'react-icons/si';
 import './styles.css';
