@@ -59,7 +59,7 @@ const App = () => {
   ];
 
   const networkingSkills: Skill[] = [
-    { name: 'Network Design & Architecture', proficiency: 90, icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'Network Design & Architecture', proficiency: 90, icon: <FaNetworkWired className="text-xl"/> },
     { name: 'Routing & Switching', proficiency: 85, icon: <FaNetworkWired className="text-xl" /> },
     { name: 'VLANs & STP', proficiency: 85, icon: <FaNetworkWired className="text-xl" /> },
     { name: 'OSPF & Dynamic Routing', proficiency: 80, icon: <FaNetworkWired className="text-xl" /> },
@@ -320,7 +320,7 @@ const App = () => {
           detectRetina: true,
         }}
       />
-      <div className="relative">
+      <div className="relative overflow-y-auto">
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-transparent z-50">
           <div className="w-full px-4 md:px-8">
@@ -733,7 +733,7 @@ const App = () => {
           
   {/* Contact Section */}
           <section id="contact" className="py-4 md:py-6">
-            <div className="max-w-4xl mx-auto px-4 text-center">
+            <div className="max-w-4xl mx-auto px-4 text-center overflow-y-auto">
               <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-8 gradient-text"
                 initial={{ opacity: 0, y: 20 }}
