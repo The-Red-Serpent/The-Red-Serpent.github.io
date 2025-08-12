@@ -815,7 +815,7 @@ const App = () => {
                 >
                   <div className="w-16 h-16 rounded-full bg-[#111927] flex items-center justify-center group-hover:bg-[#1A2332] transition-colors duration-300">
                     <img 
-                      src="/htb.png" 
+                      src="/htb.webp" 
                       alt="HackTheBox" 
                       className="w-12 h-12"
                     />
