@@ -141,9 +141,9 @@ const App = () => {
       badgeUrl: "/crta.webp"
     },
     {
-      title: "Cisco Ethical Hacker",
-      issuer: "Cisco Networking Academy",
-      badgeUrl: "https://images.credly.com/size/680x680/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png"
+      title: "Certified Red Team Infra Dev",
+      issuer: "Cyberwarfare Labs",
+      badgeUrl: "https://templates.images.credential.net/17043570231479652261133221341593.png"
     },
     {
       title: "Cyber Threat Intelligence 101",
