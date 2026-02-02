@@ -120,22 +120,6 @@ const App = () => {
 
   const certifications = [
     {
-      title: "Fortinet Certified Associate - Cybersecurity",
-      issuer: "Fortinet",
-      badgeUrl: "/fortinet.webp"
-    },
-    {
-      title: "Certified Network Security Practitioner",
-      issuer: "The SecOps Group",
-      badgeUrl: "/cnsp.webp"
-    },
-    {
-      title: "API Penetration Testing",
-      issuer: "APISEC University",
-      badgeUrl: "/apisec.webp"
-    },
-    
-    {
       title: "Certified Red Team Analyst",
       issuer: "Cyberwarfare Labs",
       badgeUrl: "/crta.webp"
@@ -146,13 +130,25 @@ const App = () => {
       badgeUrl: "https://templates.images.credential.net/17043570231479652261133221341593.png"
     },
     {
+      title: "Certified Network Security Practitioner",
+      issuer: "The SecOps Group",
+      badgeUrl: "/cnsp.webp"
+    },
+    {
       title: "Cyber Threat Intelligence 101",
       issuer: "arcx.io",
       badgeUrl: "/arc.webp"
+    },
+    {
+      title: "Certifed Red Team Operator",
+      issuer: "Pursuing",
+      badgeUrl: "/CRTO.webp"
+    },
+    {
+      title: "Certified Red Team Lead",
+      issuer: "Pursuing",
+      badgeUrl: "/CRTL.webp"
     }
-    
-    
-     
   ];
 
   const aboutContent = {
