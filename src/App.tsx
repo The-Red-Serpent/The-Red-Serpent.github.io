@@ -157,8 +157,8 @@ const App = () => {
 
   const aboutContent = {
     intro: "Hi, I'm Red Serpent",
-    role: "Cybersecurity and Network Engineer",
-    description: "Passionate about ethical hacking and digital security, diving deep into Active Directory and Web Security. Armed with penetration testing tools and a hunger for knowledge, I'm on a mission to master the art of cybersecurity. Let's hack the planet! 🌐",
+    role: "Red Team Operator",
+    description: "Red Team Operator focused on adversary simulation and offensive security testing to help organizations identify and improve security gaps.",
   };
 
   const SkillBar = ({ name, proficiency, icon }: Skill) => (
@@ -441,7 +441,7 @@ const App = () => {
                     transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
                   >
                   <Typewriter
-                      words={['Cybersecurity Engineer', 'Pentester', 'Network Wizard','System Admin', 'Red Team Operator']}
+                      words={['Security Engineer', 'Pentester', 'Red Team Operator']}
                       loop={0}
                       cursor
                       cursorStyle="|"
