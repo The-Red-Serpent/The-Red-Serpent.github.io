@@ -140,7 +140,7 @@ const App = () => {
       badgeUrl: "/arc.webp"
     },
     {
-      title: "Certifed Red Team Operator",
+      title: "Certified Red Team Operator",
       issuer: "Pursuing",
       badgeUrl: "/CRTO.webp"
     },
