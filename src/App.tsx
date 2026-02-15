@@ -19,7 +19,6 @@ import {
 } from 'react-icons/fa';
 import {  
   SiGnubash, 
-  SiPowershell, 
   SiWireshark,
   SiTryhackme,
   SiBurpsuite,
@@ -28,7 +27,8 @@ import {
 } from 'react-icons/si';
 
 import {
-  TbBrandCpp 
+  TbBrandCpp, 
+  TbBrandPowershell
 } from "react-icons/tb";
 import { 
   VscAzure 
@@ -58,7 +58,7 @@ const App = () => {
     { name: 'Python', icon: <FaPython className="text-xl" /> },
     { name: 'Bash',icon: <SiGnubash className="text-xl" /> },
     { name: 'C++',icon: <TbBrandCpp className="text-xl" /> },
-    { name: 'PowerShell',icon: <SiPowershell className="text-xl" /> },
+    { name: 'PowerShell',icon: <TbBrandPowershell className="text-xl" /> },
   ];
 
   const pentestingSkills: Skill[] = [
