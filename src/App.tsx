@@ -26,7 +26,8 @@ import {
   SiGnubash, 
   SiPowershell, 
   SiWireshark,
-  SiTryhackme
+  SiTryhackme,
+  SiHackthebox
 } from 'react-icons/si';
 import {
   TbBrandCpp 
@@ -795,12 +796,8 @@ const SkillBar = ({ name, icon }: Skill) => (
                   whileTap={{ scale: 0.95 }}
                   className="flex flex-col items-center group"
                 >
-                  <div className="w-16 h-16 rounded-full bg-[#111927] flex items-center justify-center group-hover:bg-[#1A2332] transition-colors duration-300">
-                    <img 
-                      src="/htb.webp" 
-                      alt="HackTheBox" 
-                      className="w-12 h-12"
-                    />
+                  <div className="w-16 h-16 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-gray-700 transition-colors duration-300">
+                    <SiHackthebox className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
                   </div>
                   <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">HackTheBox</span>
                 </motion.a>
