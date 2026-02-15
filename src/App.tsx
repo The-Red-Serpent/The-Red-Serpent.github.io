@@ -44,26 +44,26 @@ const App = () => {
     { name: 'Python', icon: <FaPython className="text-xl" /> },
     { name: 'C',icon: <SiC className="text-xl" /> },
     { name: 'Bash',icon: <SiGnubash className="text-xl" /> },
-    { name: 'PowerShell', proficiency: 50, icon: <SiPowershell className="text-xl" /> },
+    { name: 'PowerShell',icon: <SiPowershell className="text-xl" /> },
   ];
 
   const pentestingSkills: Skill[] = [
-    { name: 'Web Penetration Testing', proficiency: 85, icon: <FaGlobe className="text-xl" /> },
-    { name: 'API Penetration Testing', proficiency: 80, icon: <FaCode className="text-xl" /> },
-    { name: 'Active Directory Pentesting', proficiency: 75, icon: <FaWindows className="text-xl" /> },
-    { name: 'OSINT', proficiency: 90, icon: <FaSearch className="text-xl" /> },
-    { name: 'Network Penetration Testing', proficiency: 82, icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'Web Penetration Testing',icon: <FaGlobe className="text-xl" /> },
+    { name: 'API Penetration Testing',icon: <FaCode className="text-xl" /> },
+    { name: 'Active Directory Pentesting',icon: <FaWindows className="text-xl" /> },
+    { name: 'OSINT', icon: <FaSearch className="text-xl" /> },
+    { name: 'Network Penetration Testing',icon: <FaNetworkWired className="text-xl" /> },
   ];
 
   const networkingSkills: Skill[] = [
-    { name: 'Network Design & Architecture', proficiency: 90, icon: <FaNetworkWired className="text-xl"/> },
-    { name: 'Routing & Switching', proficiency: 85, icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'VLANs & STP', proficiency: 85, icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'OSPF & Dynamic Routing', proficiency: 80, icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'Network Security', proficiency: 85, icon: <FaLock className="text-xl" /> },
-    { name: 'Subnetting & IP Addressing', proficiency: 90, icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'WAN Technologies', proficiency: 75, icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'Network Troubleshooting', proficiency: 85, icon: <FaSearch className="text-xl" /> },
+    { name: 'Network Design & Architecture',icon: <FaNetworkWired className="text-xl"/> },
+    { name: 'Routing & Switching',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'VLANs & STP',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'OSPF & Dynamic Routing',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'Network Security',icon: <FaLock className="text-xl" /> },
+    { name: 'Subnetting & IP Addressing',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'WAN Technologies',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'Network Troubleshooting',icon: <FaSearch className="text-xl" /> },
   ];
 
 
