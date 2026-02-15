@@ -513,7 +513,8 @@ const SkillBar = ({ name, icon }: Skill) => (
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="glass-effect p-8 rounded-lg card-hover-effect"
+                  className="p-8"
+
                 >
                   <div className="flex items-center mb-6">
                     <FaCode className="text-2xl text-red-500 mr-3 pulse-effect" />
@@ -527,7 +528,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="glass-effect p-8 rounded-lg card-hover-effect"
+                  className="p-8"
                 >
                   <div className="flex items-center mb-6">
                     <FaShieldAlt className="text-2xl text-red-500 mr-3 pulse-effect" />
@@ -541,7 +542,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
-                  className="glass-effect p-8 rounded-lg card-hover-effect"
+                  className="p-8"
                 >
                   <div className="flex items-center mb-6">
                     <FaNetworkWired className="text-2xl text-red-500 mr-3 pulse-effect" />
