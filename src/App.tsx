@@ -38,7 +38,8 @@ import {
 import { 
   GiHound,
   GiAngularSpider,
-  GiEvilWings
+  GiEvilWings,
+  GiSemiClosedEye
 } from "react-icons/gi";
 import { 
   RiComputerLine 
@@ -96,7 +97,8 @@ const App = () => {
     { name: 'Nessus', icon: <FaEye className="text-4xl" />},
     { name: 'Metasploit', icon: <SiMetasploit className="text-4xl" />},
     { name: 'OWASP ZAP', icon: <SiOwasp className="text-4xl" />},
-   { name: 'Wireshark', icon: <SiWireshark className="text-4xl" />},
+    { name: 'Nmap', icon: <GiSemiClosedEye className="text-4xl" />},
+   { name: 'Wireshark', icon: <SiWireshark className="text-4xl" />}
     
   ];
 
@@ -683,7 +685,7 @@ const SkillBar = ({ name, icon }: Skill) => (
           {/* Certification Section */}
           <section id="certification" className="min-h-[90vh] py-6 md:py-8">
             <div className="max-w-6xl mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 gradient-text text-center">Professional Certifications</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 gradient-text text-center">Certifications</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
                 {certifications.map((cert,index) => (
                   <motion.div
