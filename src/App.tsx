@@ -778,7 +778,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                     whileTap={{ scale: 0.95 }}
                     className="flex flex-col items-center group"
                   >
-                 <SiTryhackme className="text-5xl text-white group-hover:text-red-500 transition-colors duration-300" />
+                 <SiTryhackme className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
                 <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">
                   TryHackMe
                 </span>  
