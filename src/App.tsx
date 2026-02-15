@@ -685,7 +685,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                       
                     }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
-                    className="bg-gray-900/60 backdrop-blur-md rounded-xl overflow-hidden transition-all duration-300 will-change-transform"
+                    className="rounded-xl overflow-hidden transition-all duration-300 will-change-transform"
                   >
                     <div className="p-6">
                       <div className="flex flex-col items-center">
