@@ -16,7 +16,7 @@ import {
   FaLock,
   FaEye,
   FaNetworkWired as FaNetwork,
-  FaWifi,
+  FaWifi
 } from 'react-icons/fa';
 import {  
   SiGnubash, 
