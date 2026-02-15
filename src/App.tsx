@@ -42,7 +42,7 @@ const App = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const programmingSkills: Skill[] = [
-    { name: 'Python', proficiency: 90, icon: <FaPython className="text-xl" /> },
+    { name: 'Python', icon: <FaPython className="text-xl" /> },
     { name: 'C', proficiency: 85, icon: <SiC className="text-xl" /> },
     { name: 'Bash', proficiency: 50, icon: <SiGnubash className="text-xl" /> },
     { name: 'PowerShell', proficiency: 50, icon: <SiPowershell className="text-xl" /> },
