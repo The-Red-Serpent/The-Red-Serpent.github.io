@@ -337,7 +337,9 @@ const SkillBar = ({ name, icon }: Skill) => (
                     className="w-10 h-10 object-contain"
                   />
                
-                <span className="text-xl font-bold text-white">The Red Serpent</span>
+               <span className="text-xl font-bold bg-gradient-to-r from-red-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+  The Red Serpent
+</span>
               </motion.div>
 
               {/* Mobile menu button */}
