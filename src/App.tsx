@@ -24,6 +24,7 @@ import {
   SiTryhackme,
   SiBurpsuite,
   SiMetasploit,
+  SiOwasp,
   SiHackthebox
 } from 'react-icons/si';
 
@@ -94,6 +95,7 @@ const App = () => {
     { name: 'Burp Suite', icon: <SiBurpsuite className="text-4xl" />},
     { name: 'Nessus', icon: <FaEye className="text-4xl" />},
     { name: 'Metasploit', icon: <SiMetasploit className="text-4xl" />},
+    { name: 'OWASP ZAP', icon: <SiOwasp className="text-4xl" />},
    { name: 'Wireshark', icon: <SiWireshark className="text-4xl" />},
     
   ];
