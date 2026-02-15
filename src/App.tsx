@@ -32,6 +32,9 @@ import {
 import {
   TbBrandCpp 
 } from "react-icons/tb";
+import { 
+  VscAzure 
+} from "react-icons/vsc";
 import './styles.css';
 import { Particles } from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
@@ -60,6 +63,7 @@ const App = () => {
     { name: 'OSINT', icon: <FaSearch className="text-xl" /> },
     { name: 'Web',icon: <FaGlobe className="text-xl" /> },
     { name: 'Mobile',icon: <FaMobile className="text-xl" /> },
+     { name: 'Azure',icon: <VscAzure className="text-xl" /> },
   ];
 
   const networkingSkills: Skill[] = [
