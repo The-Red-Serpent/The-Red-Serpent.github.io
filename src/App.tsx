@@ -15,7 +15,6 @@ import {
   FaMobile,
   FaLock,
   FaEye,
-  FaNetworkWired as FaNetwork,
   FaWifi
 } from 'react-icons/fa';
 import {  
