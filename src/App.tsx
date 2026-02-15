@@ -781,12 +781,8 @@ const SkillBar = ({ name, icon }: Skill) => (
                   whileTap={{ scale: 0.95 }}
                   className="flex flex-col items-center group"
                 >
-                  <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center group-hover:bg-gray-900 transition-colors duration-300">
-                    <img 
-                      src="/THM.png" 
-                      alt="TryHackMe" 
-                      className="w-12 h-12 filter brightness-100"
-                    />
+                  <div className="w-16 h-16 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-gray-700 transition-colors duration-300">
+                    <SiTryhackme className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
                   </div>
                   <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">TryHackMe</span>
                 </motion.a>
