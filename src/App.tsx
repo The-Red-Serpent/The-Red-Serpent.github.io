@@ -163,7 +163,7 @@ const App = () => {
       badgeUrl: "/CRTO.webp"
     },
     {
-      title: "Certified  Lead",
+      title: "Certified Red Team Lead",
       issuer: "Pursuing",
       badgeUrl: "/CRTL.webp"
     }
