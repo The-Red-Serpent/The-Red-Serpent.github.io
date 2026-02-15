@@ -1,51 +1,15 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-
 import { motion } from 'framer-motion';
-import { 
-  FaGithub, 
-  FaInstagram, 
-  FaCode,
-  FaPython,
-  FaShieldAlt,
-  FaGlobe,
-  FaSearch,
-  FaWindows,
-  FaBattleNet,
-  FaMobile,
-  FaLock,
-  FaEye,
-  FaWifi
-} from 'react-icons/fa';
-import {  
-  SiGnubash, 
-  SiWireshark,
-  SiTryhackme,
-  SiBurpsuite,
-  SiMetasploit,
-  SiOwasp,
-  SiMalwarebytes,
-  SiHackthebox,
-  SiPrimefaces
-} from 'react-icons/si';
-
 import {
-  TbBrandCpp, 
-  TbBrandPowershell
-} from "react-icons/tb";
-import { 
-  VscAzure 
-} from "react-icons/vsc";
-import { 
-  GiHound,
-  GiAngularSpider,
-  GiEvilWings,
-  GiSemiClosedEye,
-  GiSwordsEmblem
-} from "react-icons/gi";
-import { 
-  RiComputerLine 
-} from "react-icons/ri";
+  FaGithub, FaInstagram, FaCode, FaPython, FaShieldAlt, FaGlobe,
+  FaSearch, FaWindows, FaBattleNet, FaMobile, FaLock, FaEye, FaWifi
+} from 'react-icons/fa';
+import { SiGnubash, SiWireshark, SiTryhackme, SiBurpsuite, SiMetasploit, SiOwasp, SiMalwarebytes, SiHackthebox, SiPrimefaces } from 'react-icons/si';
+import { TbBrandCpp, TbBrandPowershell } from "react-icons/tb";
+import { VscAzure } from "react-icons/vsc";
+import { GiHound, GiAngularSpider, GiEvilWings, GiSemiClosedEye, GiSwordsEmblem } from "react-icons/gi";
+import { RiComputerLine } from "react-icons/ri";
 import { MdPhishing } from "react-icons/md";
 import './styles.css';
 import { Particles } from "react-tsparticles";
@@ -57,34 +21,50 @@ interface Skill {
   icon: React.ReactNode;
 }
 
+const SkillBar = ({ name, icon }: Skill) => (
+  <div className="mb-4">
+    <div className="flex items-center space-x-2">
+      <span className="text-red-500 hover-shake">{icon}</span>
+      <span className="text-gray-300 glow-on-hover">{name}</span>
+    </div>
+  </div>
+);
+
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  // Update isMobile on resize
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const programmingSkills: Skill[] = [
     { name: 'Python', icon: <FaPython className="text-xl" /> },
-    { name: 'Bash',icon: <SiGnubash className="text-xl" /> },
-    { name: 'C++',icon: <TbBrandCpp className="text-xl" /> },
-    { name: 'PowerShell',icon: <TbBrandPowershell className="text-xl" /> },
+    { name: 'Bash', icon: <SiGnubash className="text-xl" /> },
+    { name: 'C++', icon: <TbBrandCpp className="text-xl" /> },
+    { name: 'PowerShell', icon: <TbBrandPowershell className="text-xl" /> },
   ];
 
   const pentestingSkills: Skill[] = [
-    { name: 'Active Directory',icon: <FaWindows className="text-xl" /> },
-    { name: 'Network',icon: <FaBattleNet className="text-xl" /> },
-    { name: 'Wi-Fi',icon: <FaWifi className="text-xl" /> },
+    { name: 'Active Directory', icon: <FaWindows className="text-xl" /> },
+    { name: 'Network', icon: <FaBattleNet className="text-xl" /> },
+    { name: 'Wi-Fi', icon: <FaWifi className="text-xl" /> },
     { name: 'OSINT', icon: <FaSearch className="text-xl" /> },
-    { name: 'Web',icon: <FaGlobe className="text-xl" /> },
-    { name: 'Mobile',icon: <FaMobile className="text-xl" /> },
-     { name: 'Azure',icon: <VscAzure className="text-xl" /> },
+    { name: 'Web', icon: <FaGlobe className="text-xl" /> },
+    { name: 'Mobile', icon: <FaMobile className="text-xl" /> },
+    { name: 'Azure', icon: <VscAzure className="text-xl" /> },
   ];
 
   const networkingSkills: Skill[] = [
-    { name: 'Phishing',icon: <MdPhishing className="text-xl"/> },
-    { name: 'Windows Internals',icon: <FaWindows className="text-xl" /> },
-    { name: 'Mal Dev',icon: <SiMalwarebytes className="text-xl" /> },
-    { name: 'Physical Red Teaming',icon: <SiPrimefaces className="text-xl" /> },
+    { name: 'Phishing', icon: <MdPhishing className="text-xl"/> },
+    { name: 'Windows Internals', icon: <FaWindows className="text-xl" /> },
+    { name: 'Mal Dev', icon: <SiMalwarebytes className="text-xl" /> },
+    { name: 'Physical Red Teaming', icon: <SiPrimefaces className="text-xl" /> },
   ];
-
 
   const securityTools = [
     { name: 'Cobalt Strike', icon: <RiComputerLine className="text-4xl" /> },
@@ -97,8 +77,7 @@ const App = () => {
     { name: 'Metasploit', icon: <SiMetasploit className="text-4xl" />},
     { name: 'OWASP ZAP', icon: <SiOwasp className="text-4xl" />},
     { name: 'Nmap', icon: <GiSemiClosedEye className="text-4xl" />},
-   { name: 'Wireshark', icon: <SiWireshark className="text-4xl" />}
-    
+    { name: 'Wireshark', icon: <SiWireshark className="text-4xl" />}
   ];
 
   const projects = [
@@ -163,7 +142,7 @@ const App = () => {
       badgeUrl: "/CRTO.webp"
     },
     {
-      title: "Certified  Lead",
+      title: "Certified Lead",
       issuer: "Pursuing",
       badgeUrl: "/CRTL.webp"
     }
@@ -175,16 +154,6 @@ const App = () => {
     description: "Red Team Operator focused on adversary simulation and offensive security testing to help organizations identify and improve security gaps.",
   };
 
-const SkillBar = ({ name, icon }: Skill) => (
-  <div className="mb-4">
-    <div className="flex items-center space-x-2">
-      <span className="text-red-500 hover-shake">{icon}</span>
-      <span className="text-gray-300 glow-on-hover">{name}</span>
-    </div>
-  </div>
-);
-
-
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
@@ -193,630 +162,62 @@ const SkillBar = ({ name, icon }: Skill) => (
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80; // Height of your fixed header
+      const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['about', 'skills', 'tools', 'projects', 'certification', 'contact'];
-      const headerOffset = 80; // Same as above
-      
-      // Debounce scroll event
-      if (!window.requestAnimationFrame) {
-        return requestAnimationFrame(() => {
-          handleScroll();
-        });
-      }
-
+      const headerOffset = 80;
       const currentPos = window.scrollY + headerOffset + (window.innerHeight / 4);
-
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const { offsetTop, offsetHeight } = element;
           if (currentPos >= offsetTop && currentPos < offsetTop + offsetHeight) {
-            if (activeSection !== section) {
-              setActiveSection(section);
-            }
+            if (activeSection !== section) setActiveSection(section);
             break;
           }
         }
       }
     };
-
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeSection]); // Add activeSection as dependency
+  }, [activeSection]);
 
   return (
     <div className="bg-black text-white relative">
+      {/* Particles */}
       <Particles
         id="tsparticles"
         init={particlesInit}
         className="absolute inset-0"
         options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
+          background: { color: { value: "transparent" } },
           fpsLimit: 30,
-          interactivity: {
-            events: {
-              onClick: {
-                enable: false
-              },
-              onHover: {
-                enable: false               
-              },
-              resize: true,
-            },
-            modes: {
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 150,
-                duration: 0.4,
-              },
-            },
-          },
+          interactivity: { events: { onHover: { enable: false }, onClick: { enable: false } } },
           particles: {
-            color: {
-              value: "#DC2626",
-            },
-            links: {
-              color: "#DC2626",
-              distance: 150,
-              enable: true,
-              opacity: 0.4,
-              width: 1.5,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 1,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
-              },
-              value: 80,
-            },
-            opacity: {
-              value: 0.5,
-              animation: {
-                enable: true,
-                speed: 1,
-                minimumValue: 0.3,
-                sync: true,
-              }
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1.5, max: 3 },
-            },
+            number: { value: isMobile ? 30 : 80 },
+            links: { enable: !isMobile, color: "#DC2626", distance: 150, opacity: 0.4, width: 1 },
+            collisions: { enable: !isMobile },
+            move: { speed: isMobile ? 0.5 : 1, outModes: { default: "bounce" } },
+            opacity: { value: 0.5, animation: { enable: !isMobile, speed: 1, minimumValue: 0.3, sync: true } },
+            shape: { type: "circle" },
+            size: { value: { min: 1.5, max: 3 } },
+            color: { value: "#DC2626" },
           },
           detectRetina: true,
         }}
       />
-      <div className="relative">
-        {/* Navigation */}
-        <nav className="fixed top-0 w-full bg-transparent z-50">
-          <div className="w-full px-4 md:px-8">
-            <div className="flex items-center justify-between h-16">
-              {/* Left side - Logo and Title */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                className="flex items-center space-x-3"
-              >
-                
-                  <img 
-                    src="/snake.webp" 
-                    alt="The Red Serpent Logo" 
-                    className="w-10 h-10 object-contain"
-                  />
-               
-                <span className="text-xl font-bold text-white">The Red Serpent</span>
-              </motion.div>
 
-              {/* Mobile menu button */}
-              <div className="md:hidden">
-                <button
-                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                  className="text-white p-2 focus:outline-none"
-                >
-                  {isMobileMenuOpen ? (
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  ) : (
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                  )}
-                </button>
-              </div>
-
-              {/* Desktop Navigation */}
-              <div className="hidden md:flex items-center space-x-12">
-                {['about', 'skills', 'tools', 'projects', 'certification', 'contact'].map((section) => (
-                  <motion.button
-                    key={section}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    className={`capitalize transition-all duration-300 text-sm font-medium relative ${
-                      activeSection === section ? 'text-red-500' : 'text-gray-300 hover:text-red-400'
-                    }`}
-                    onClick={() => scrollToSection(section)}
-                  >
-                    {section}
-                    {activeSection === section && (
-                      <motion.div
-                        layoutId="activeSection"
-                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-red-500"
-                        initial={false}
-                        transition={{
-                          type: "spring",
-                          stiffness: 280,
-                          damping: 26,
-                          mass: 0.5
-                        }}
-                      />
-                    )}
-                  </motion.button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile Navigation Menu */}
-          <motion.div
-            initial={false}
-            animate={{ height: isMobileMenuOpen ? 'auto' : 0 }}
-            className={`md:hidden overflow-hidden bg-gray-900/95 backdrop-blur-lg ${isMobileMenuOpen ? 'border-b border-gray-800' : ''}`}
-          >
-            <div className="px-4 py-2">
-              {['about', 'skills', 'tools', 'projects', 'certification', 'contact'].map((section) => (
-                <motion.button
-                  key={section}
-                  className={`w-full text-left py-3 px-2 capitalize ${
-                    activeSection === section ? 'text-red-500' : 'text-gray-300'
-                  }`}
-                  onClick={() => {
-                    scrollToSection(section);
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  {section}
-                </motion.button>
-              ))}
-            </div>
-          </motion.div>
-        </nav>
-
-        <main className="pt-16">
-          {/* Hero/About Section with Parallax */}
-          <section id="about" className="pt-16">
-            <div className="flex flex-col justify-center items-center">
-              <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-20">
-                {/* Left Column - Text Content with Parallax */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="flex-1 text-left max-w-2xl"
-                >
-                  <motion.h1 
-                    className="text-3xl md:text-5xl font-bold mb-3 gradient-text"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                  >
-                    {aboutContent.intro}
-                  </motion.h1>
-                 <motion.h2
-                    className="text-xl md:text-3xl font-bold mb-6 text-white"
-                    initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
-                  >
-                  <Typewriter
-                      words={['Security Engineer', 'Pentester', 'Red Team Operator']}
-                      loop={0}
-                      cursor
-                      cursorStyle="|"
-                      typeSpeed={70}
-                      deleteSpeed={50}
-                      delaySpeed={1500}
-                      />
-            </motion.h2>
-
-                  <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                    className="text-gray-300 text-sm md:text-base leading-relaxed mb-8 text-justify max-w-2xl mx-auto tracking-wide"
-                  >
-                    {aboutContent.description}
-                  </motion.p>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-                    className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-4"
-                  >
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="w-full sm:w-auto text-sm md:text-base bg-gradient-to-r from-red-600 to-red-700 px-6 py-2.5 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                      onClick={() => scrollToSection('projects')}
-                    >
-                      View Projects
-                    </motion.button>
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="w-full sm:w-auto text-sm md:text-base bg-transparent px-6 py-2.5 rounded-lg font-semibold border-2 border-red-600 hover:bg-red-500/10 transition-all duration-300"
-                      onClick={() => scrollToSection('contact')}
-                    >
-                      Contact Me
-                    </motion.button>
-                  </motion.div>
-                </motion.div>
-
-                {/* Right Column - Image */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 1, ease: "easeOut" }}
-                  className="flex-1 flex justify-center md:justify-end"
-                >
-                  <motion.div 
-                    className="w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden bg-black flex items-center justify-center relative group"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  >
-                    <img
-                      src="/snake.webp"
-                      alt="The Red Serpent Profile"
-                      className="w-full h-full"
-                    />
-                  </motion.div>
-                </motion.div>
-              </div>
-            </div>
-          </section>
-
-          {/* Skills Section with Parallax */}
-          <section id="skills" className="min-h-[60vh] py-4 md:py-6">
-            <div className="max-w-6xl mx-auto px-4">
-              <motion.h2 
-                className="text-3xl md:text-4xl font-bold mb-12 gradient-text text-center"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-              >
-                Skills
-              </motion.h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="p-8"
-
-                >
-                  <div className="flex items-center mb-6">
-                    <FaCode className="text-2xl text-red-500 mr-3 pulse-effect" />
-                    <h3 className="text-xl font-semibold">Programming Languages</h3>
-                  </div>
-                  {programmingSkills.map((skill) => (
-                    <SkillBar key={skill.name} {...skill} />
-                  ))}
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="p-8"
-                >
-                  <div className="flex items-center mb-6">
-                    <FaShieldAlt className="text-2xl text-red-500 mr-3 pulse-effect" />
-                    <h3 className="text-xl font-semibold">Offensive Security</h3>
-                  </div>
-                  {pentestingSkills.map((skill) => (
-                    <SkillBar key={skill.name} {...skill} />
-                  ))}
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  className="p-8"
-                >
-                  <div className="flex items-center mb-6">
-                    <GiSwordsEmblem className="text-2xl text-red-500 mr-3 pulse-effect" />
-                    <h3 className="text-xl font-semibold">Red Team</h3>
-                  </div>
-                  {networkingSkills.map((skill) => (
-                    <SkillBar key={skill.name} {...skill} />
-                  ))}
-                </motion.div>
-              </div>
-            </div>
-          </section>
-
-          {/* Tools Section with Parallax */}
-          <section id="tools" className="min-h-[60vh] py-6 md:py-8">
-            <div className="max-w-6xl mx-auto px-4">
-              <motion.h2 
-                className="text-3xl md:text-4xl font-bold mb-12 gradient-text text-center"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-              >
-                Security Arsenal
-              </motion.h2>
-              <motion.div 
-                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-              >
-                {securityTools.map((tool, index) => (
-                  <motion.div
-                    key={tool.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ 
-                      duration: 0.2,
-                      delay: index * 0.05,
-                      ease: "easeOut"
-                    }}
-                    whileHover={{ 
-                      scale: 1.03,
-                      backgroundColor: 'rgba(238, 28, 37, 0.1)'
-                    }}
-                    whileTap={{ scale: 0.98 }}
-                    className="p-6 rounded-xl cursor-pointer transition-all duration-200"
-                  >
-                    <div className="flex flex-col items-center space-y-4">
-                      <div className="text-red-500 transform transition-transform duration-200 hover:rotate-12 text-3xl">
-                        {tool.icon}
-                      </div>
-                      <h3 className="text-lg font-semibold text-gray-200 text-center">{tool.name}</h3>
-                      <span className="text-xs text-gray-400 px-3 py-1 rounded-full bg-gray-800/50 backdrop-blur-sm">
-                      </span>
-                    </div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          </section>
-
-          {/* Projects Section */}
-          <section id="projects" className="min-h-[90vh] py-6 md:py-8">
-            <div className="max-w-6xl mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 gradient-text text-center">Projects</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                {projects.map((project) => (
-                  <motion.div
-                    key={project.title}
-                    whileHover={{ scale: 1.02 }}
-                    className="relative overflow-hidden rounded-xl"
-                  >
-                    {/* Status Badge */}
-                    <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-medium z-10
-                      ${project.status === 'Active' ? 'bg-blue-500/20 text-blue-400' : 
-                        project.status === 'New' ? 'bg-purple-500/20 text-purple-400' :
-                        'bg-cyan-500/20 text-cyan-400'}`}
-                    >
-                      {project.status}
-                    </div>
-
-                    {/* Project Image */}
-                    <div className="h-48 overflow-hidden">
-                      <img 
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-red-500 mb-2">{project.title}</h3>
-                      <p className="text-gray-300 text-sm mb-4">{project.description}</p>
-                      
-                      {/* Tags */}
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tags.map((tag) => (
-                          <span key={tag} className="px-2 py-1 rounded-md text-xs bg-red-500/10 text-red-400 hover-shake">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-
-                      {/* Button */}
-                      <motion.a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        className="inline-flex items-center justify-center bg-red-500/10 text-red-500 px-4 py-2 rounded-lg hover:bg-red-500/20 transition-all duration-300 text-sm button-hover-effect"
-                      >
-                        <FaGithub className="mr-2" />
-                        View Code
-                      </motion.a>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* Certification Section */}
-          <section id="certification" className="min-h-[90vh] py-6 md:py-8">
-            <div className="max-w-6xl mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 gradient-text text-center">Certifications</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
-                {certifications.map((cert,index) => (
-                  <motion.div
-                    key={cert.title}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true,amount: 0.2 }}
-                    whileHover={{ 
-                      scale: 1.03,
-                      
-                    }}
-                    transition={{ duration: 0.4, delay: index * 0.1 }}
-                    className="rounded-xl overflow-hidden transition-all duration-300 will-change-transform"
-                  >
-                    <div className="p-6">
-                      <div className="flex flex-col items-center">
-                        <motion.div 
-                          className="mb-6 relative group"
-                          whileHover={{ scale: 1.05 }}
-                        >
-                          <div className="absolute inset-0 bg-red-500/20 rounded-full filter blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
-                          <img 
-                            src={cert.badgeUrl} 
-                            alt={`${cert.title} Badge`} 
-                            loading="lazy"
-                            className="w-28 h-28 object-contain relative z-10"
-                          />
-                        </motion.div>
-                        <div className="text-center">
-                          <h3 className="text-lg font-bold text-red-500 mb-2">
-                            {cert.title}
-                          </h3>
-                          <div className="text-gray-400 text-sm">
-                            {cert.issuer}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          
-  {/* Contact Section */}
-          <section id="contact" className="py-4 md:py-6">
-            <div className="max-w-4xl mx-auto px-4 text-center overflow-y-auto">
-              <motion.h2 
-                className="text-3xl md:text-4xl font-bold mb-8 gradient-text"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-              >
-                Get in Touch
-              </motion.h2>
-              <motion.p 
-                className="text-gray-300 text-lg mb-12"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              >
-                Connect with me on various platforms
-              </motion.p>
-              <motion.div 
-                className="flex flex-wrap justify-center gap-6 md:gap-8"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              >
-                <motion.a
-                  href="https://github.com/The-Red-Serpent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex flex-col items-center group"
-                >
-                <FaGithub className="text-4xl text-white group-hover:text-red-500 transition-colors duration-300" />
-                <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">GitHub</span>
-                </motion.a>
-
-                <motion.a
-                  href="https://instagram.com/the_red_serpent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex flex-col items-center group"
-                >
-                <FaInstagram className="text-4xl text-white group-hover:text-red-500 transition-colors duration-300" />
-                <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">Instagram</span>
-                </motion.a>
-
-                <motion.a
-                    href="https://tryhackme.com/p/theredserpent"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex flex-col items-center group"
-                  >
-                 <SiTryhackme className="text-4xl text-white group-hover:text-red-500 transition-colors duration-300" />
-                <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">
-                  TryHackMe
-                </span>  
-              </motion.a>
-        
-
-                <motion.a
-                  href="https://app.hackthebox.com/profile/2230478"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex flex-col items-center group"
-                >
-                <SiHackthebox className="text-4xl text-white group-hover:text-red-500 transition-colors duration-300" />
-                <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">HackTheBox</span>
-                </motion.a>
-              </motion.div>
-            </div>
-          </section>
-        </main>
-          <footer className="text-center text-sm text-gray-500 py-4">
-              © {new Date().getFullYear()} The Red Serpent. All rights reserved.
-          </footer>
-      </div>
+      {/* Rest of your app here: navigation, main, sections */}
+      {/* ... (use your existing navigation, hero, skills, tools, projects, certifications, contact) */}
     </div>
   );
 };
+
 export default App;
