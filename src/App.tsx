@@ -7,7 +7,6 @@ import {
   FaInstagram, 
   FaCode,
   FaPython,
-  FaNetworkWired,
   FaShieldAlt,
   FaGlobe,
   FaSearch,
@@ -35,6 +34,7 @@ import {
 } from "react-icons/vsc";
 import { 
   GiHound,
+  GiAngularSpider,
   GiEvilWings
 } from "react-icons/gi";
 import { 
@@ -63,7 +63,7 @@ const App = () => {
 
   const pentestingSkills: Skill[] = [
     { name: 'Active Directory',icon: <FaWindows className="text-xl" /> },
-    { name: 'Network',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'Network',icon: <FaBattleNet className="text-xl" /> },
     { name: 'Wi-Fi',icon: <FaWifi className="text-xl" /> },
     { name: 'OSINT', icon: <FaSearch className="text-xl" /> },
     { name: 'Web',icon: <FaGlobe className="text-xl" /> },
@@ -86,12 +86,14 @@ const App = () => {
   const securityTools = [
     { name: 'Cobalt Strike', icon: <RiComputerLine className="text-4xl" /> },
     { name: 'Bloodhound', icon: <GiHound className="text-4xl" />},
+    { name: 'Mimikatz', icon: <FaLock className="text-4xl" />},
+    { name: 'Netexec', icon: <GiAngularSpider className="text-4xl" />},
     { name: 'Evilgnix', icon: <GiEvilWings className="text-4xl" />},
-    { name: 'Metasploit', icon: <SiMetasploit className="text-4xl" />},
     { name: 'Burp Suite', icon: <SiBurpsuite className="text-4xl" />},
-    { name: 'Wireshark', icon: <SiWireshark className="text-4xl" />},
     { name: 'Nessus', icon: <FaEye className="text-4xl" />},
-    { name: 'Mimikatz', icon: <FaLock className="text-4xl" />}
+    { name: 'Metasploit', icon: <SiMetasploit className="text-4xl" />},
+   { name: 'Wireshark', icon: <SiWireshark className="text-4xl" />},
+    
   ];
 
   const projects = [
@@ -759,7 +761,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                   whileTap={{ scale: 0.95 }}
                   className="flex flex-col items-center group"
                 >
-                <FaGithub className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
+                <FaGithub className="text-4xl text-white group-hover:text-red-500 transition-colors duration-300" />
                 <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">GitHub</span>
                 </motion.a>
 
@@ -771,7 +773,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                   whileTap={{ scale: 0.95 }}
                   className="flex flex-col items-center group"
                 >
-                <FaInstagram className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
+                <FaInstagram className="text-4xl text-white group-hover:text-red-500 transition-colors duration-300" />
                 <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">Instagram</span>
                 </motion.a>
 
@@ -783,7 +785,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                     whileTap={{ scale: 0.95 }}
                     className="flex flex-col items-center group"
                   >
-                 <SiTryhackme className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
+                 <SiTryhackme className="text-4xl text-white group-hover:text-red-500 transition-colors duration-300" />
                 <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">
                   TryHackMe
                 </span>  
@@ -798,7 +800,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                   whileTap={{ scale: 0.95 }}
                   className="flex flex-col items-center group"
                 >
-                <SiHackthebox className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
+                <SiHackthebox className="text-4xl text-white group-hover:text-red-500 transition-colors duration-300" />
                 <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">HackTheBox</span>
                 </motion.a>
               </motion.div>
