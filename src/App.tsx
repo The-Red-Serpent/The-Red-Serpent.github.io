@@ -19,14 +19,17 @@ import {
   FaEye,
   FaNetworkWired as FaNetwork,
   FaChartLine,
+  FaWifi,
   FaUserNinja
 } from 'react-icons/fa';
-import { 
-  SiC, 
+import {  
   SiGnubash, 
   SiPowershell, 
   SiWireshark
 } from 'react-icons/si';
+import {
+  TbBrandCpp 
+} from "react-icons/tb";
 import './styles.css';
 import { Particles } from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
@@ -44,13 +47,14 @@ const App = () => {
   const programmingSkills: Skill[] = [
     { name: 'Python', icon: <FaPython className="text-xl" /> },
     { name: 'Bash',icon: <SiGnubash className="text-xl" /> },
-    { name: 'C',icon: <SiC className="text-xl" /> },
+    { name: 'C++',icon: <TbBrandCpp className="text-xl" /> },
     { name: 'PowerShell',icon: <SiPowershell className="text-xl" /> },
   ];
 
   const pentestingSkills: Skill[] = [
     { name: 'Active Directory Penetration Testing',icon: <FaWindows className="text-xl" /> },
     { name: 'Network Penetration Testing',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'Wi-Fi Penetration Testing',icon: <FaWifi className="text-xl" /> },
     { name: 'OSINT', icon: <FaSearch className="text-xl" /> },
     { name: 'Web Penetration Testing',icon: <FaGlobe className="text-xl" /> },
     { name: 'Mobile Penetration Testing',icon: <FaMobile className="text-xl" /> },
