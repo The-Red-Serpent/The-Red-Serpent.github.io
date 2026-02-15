@@ -158,25 +158,13 @@ const App = () => {
 
 const SkillBar = ({ name, icon }: Skill) => (
   <div className="mb-4">
-    <div className="flex justify-between items-center mb-1">
-      <div className="flex items-center space-x-2">
-        <span className="text-red-500 hover-shake">{icon}</span>
-        <span className="text-gray-300 glow-on-hover">{name}</span>
-      </div>
-    </div>
-    <div className="h-2 bg-gray-900 rounded-full overflow-hidden">
-      <motion.div
-        initial={{ width: 0 }}
-        animate={{ width: '100%' }} // full width for now
-        transition={{ duration: 1, delay: 0.2 }}
-        className="h-full bg-[#EE1C25] skill-bar-fill"
-        style={{
-          boxShadow: '0 0 10px rgba(238, 28, 37, 0.5)'
-        }}
-      />
+    <div className="flex items-center space-x-2">
+      <span className="text-red-500 hover-shake">{icon}</span>
+      <span className="text-gray-300 glow-on-hover">{name}</span>
     </div>
   </div>
 );
+
 
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
