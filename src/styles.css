@@ -290,7 +290,7 @@ html {
 }
 
 .rainbow-text {
-  background: linear-gradient(90deg, red, purple, lightblue, blue, indigo, violet);
+  background: linear-gradient(90deg, red, purple, lightblue, blue, violet, red);
   background-size: 400% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
