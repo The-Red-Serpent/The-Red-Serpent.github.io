@@ -25,7 +25,8 @@ import {
 import {  
   SiGnubash, 
   SiPowershell, 
-  SiWireshark
+  SiWireshark,
+  SiTryhackme
 } from 'react-icons/si';
 import {
   TbBrandCpp 
@@ -52,12 +53,12 @@ const App = () => {
   ];
 
   const pentestingSkills: Skill[] = [
-    { name: 'Active Directory Penetration Testing',icon: <FaWindows className="text-xl" /> },
-    { name: 'Network Penetration Testing',icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'Wi-Fi Penetration Testing',icon: <FaWifi className="text-xl" /> },
+    { name: 'Active Directory',icon: <FaWindows className="text-xl" /> },
+    { name: 'Network',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'Wi-Fi',icon: <FaWifi className="text-xl" /> },
     { name: 'OSINT', icon: <FaSearch className="text-xl" /> },
-    { name: 'Web Penetration Testing',icon: <FaGlobe className="text-xl" /> },
-    { name: 'Mobile Penetration Testing',icon: <FaMobile className="text-xl" /> },
+    { name: 'Web',icon: <FaGlobe className="text-xl" /> },
+    { name: 'Mobile',icon: <FaMobile className="text-xl" /> },
   ];
 
   const networkingSkills: Skill[] = [
