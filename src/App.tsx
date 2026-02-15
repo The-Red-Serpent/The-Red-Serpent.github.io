@@ -25,7 +25,9 @@ import {
   SiBurpsuite,
   SiMetasploit,
   SiOwasp,
-  SiHackthebox
+  SiMalwarebytes,
+  SiHackthebox,
+  SiPrimefaces
 } from 'react-icons/si';
 
 import {
@@ -39,11 +41,13 @@ import {
   GiHound,
   GiAngularSpider,
   GiEvilWings,
-  GiSemiClosedEye
+  GiSemiClosedEye,
+  GiSwordsEmblem
 } from "react-icons/gi";
 import { 
   RiComputerLine 
 } from "react-icons/ri";
+import { MdPhishing } from "react-icons/md";
 import './styles.css';
 import { Particles } from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
@@ -76,14 +80,10 @@ const App = () => {
   ];
 
   const networkingSkills: Skill[] = [
-    { name: 'Network Design & Architecture',icon: <FaNetworkWired className="text-xl"/> },
-    { name: 'Routing & Switching',icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'VLANs & STP',icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'OSPF & Dynamic Routing',icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'Network Security',icon: <FaLock className="text-xl" /> },
-    { name: 'Subnetting & IP Addressing',icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'WAN Technologies',icon: <FaNetworkWired className="text-xl" /> },
-    { name: 'Network Troubleshooting',icon: <FaSearch className="text-xl" /> },
+    { name: 'Phishing',icon: <MdPhishing className="text-xl"/> },
+    { name: 'Windows Internals',icon: <FaWindows className="text-xl" /> },
+    { name: 'Mal Dev',icon: <SiMalwarebytes className="text-xl" /> },
+    { name: 'Physical Red Teaming',icon: <SiPrimefaces className="text-xl" /> },
   ];
 
 
@@ -164,7 +164,7 @@ const App = () => {
       badgeUrl: "/CRTO.webp"
     },
     {
-      title: "Certified Red Team Lead",
+      title: "Certified  Lead",
       issuer: "Pursuing",
       badgeUrl: "/CRTL.webp"
     }
@@ -558,8 +558,8 @@ const SkillBar = ({ name, icon }: Skill) => (
                   className="p-8"
                 >
                   <div className="flex items-center mb-6">
-                    <FaNetworkWired className="text-2xl text-red-500 mr-3 pulse-effect" />
-                    <h3 className="text-xl font-semibold">Networking Knowledge</h3>
+                    <GiSwordsEmblem className="text-2xl text-red-500 mr-3 pulse-effect" />
+                    <h3 className="text-xl font-semibold">Red Team</h3>
                   </div>
                   {networkingSkills.map((skill) => (
                     <SkillBar key={skill.name} {...skill} />
