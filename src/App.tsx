@@ -591,7 +591,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                       backgroundColor: 'rgba(238, 28, 37, 0.1)'
                     }}
                     whileTap={{ scale: 0.98 }}
-                    className="glass-effect p-6 rounded-xl cursor-pointer border border-transparent hover:border-red-500/20 transition-all duration-200"
+                    className="p-6 rounded-xl cursor-pointer transition-all duration-200"
                   >
                     <div className="flex flex-col items-center space-y-4">
                       <div className="text-red-500 transform transition-transform duration-200 hover:rotate-12 text-3xl">
@@ -617,7 +617,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                   <motion.div
                     key={project.title}
                     whileHover={{ scale: 1.02 }}
-                    className="relative overflow-hidden rounded-xl bg-gray-900/50 backdrop-blur-sm"
+                    className="relative overflow-hidden rounded-xl"
                   >
                     {/* Status Badge */}
                     <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-medium z-10
