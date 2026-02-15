@@ -153,6 +153,89 @@ const App = () => {
     role: "Red Team Operator",
     description: "Red Team Operator focused on adversary simulation and offensive security testing to help organizations identify and improve security gaps.",
   };
+  {/* Contact Me Section */}
+<section id="contact" className="relative z-10 py-20 px-6 md:px-20 bg-black text-white">
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+    className="max-w-4xl mx-auto text-center"
+  >
+    <h2 className="text-4xl font-bold mb-6 text-red-500">Contact Me</h2>
+    <p className="mb-8 text-gray-300">
+      Interested in collaborating or just want to say hi? Reach out through any of the platforms below!
+    </p>
+
+    <div className="flex flex-wrap justify-center gap-6 mb-8">
+      <a
+        href="mailto:youremail@example.com"
+        className="hover:text-red-500 transition-colors"
+      >
+        <FaEnvelope className="text-3xl" />
+      </a>
+      <a
+        href="https://github.com/YourUsername"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-red-500 transition-colors"
+      >
+        <FaGithub className="text-3xl" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/YourProfile/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-red-500 transition-colors"
+      >
+        <FaGlobe className="text-3xl" />
+      </a>
+      <a
+        href="https://www.instagram.com/YourUsername/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-red-500 transition-colors"
+      >
+        <FaInstagram className="text-3xl" />
+      </a>
+    </div>
+
+    <motion.form
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      viewport={{ once: true }}
+      className="flex flex-col space-y-4 max-w-xl mx-auto"
+      onSubmit={(e) => {
+        e.preventDefault();
+        alert('Form submission functionality coming soon!');
+      }}
+    >
+      <input
+        type="text"
+        placeholder="Your Name"
+        className="p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-red-500"
+      />
+      <input
+        type="email"
+        placeholder="Your Email"
+        className="p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-red-500"
+      />
+      <textarea
+        placeholder="Your Message"
+        rows={4}
+        className="p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-red-500"
+      />
+      <button
+        type="submit"
+        className="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded transition-colors"
+      >
+        Send Message
+      </button>
+    </motion.form>
+  </motion.div>
+</section>
+
 
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
