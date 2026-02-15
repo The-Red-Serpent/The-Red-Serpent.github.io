@@ -14,7 +14,7 @@ import {
   FaSearch,
   FaWindows,
   FaSpider,
-  FaMobile
+  FaMobile,
   FaLock,
   FaEye,
   FaNetworkWired as FaNetwork,
