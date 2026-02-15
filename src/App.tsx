@@ -775,18 +775,19 @@ const SkillBar = ({ name, icon }: Skill) => (
                 </motion.a>
 
                 <motion.a
-                  href="https://tryhackme.com/p/theredserpent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex flex-col items-center group"
-                >
-                  <div className="w-16 h-16 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-gray-700 transition-colors duration-300">
-                    <SiTryhackme className="text-3xl text-white group-hover:text-red-500 transition-colors duration-300" />
-                  </div>
-                  <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">TryHackMe</span>
-                </motion.a>
+  href="https://tryhackme.com/p/theredserpent"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.1, y: -5 }}
+  whileTap={{ scale: 0.95 }}
+  className="flex flex-col items-center group"
+>
+  <SiTryhackme className="text-5xl text-white group-hover:text-red-500 transition-colors duration-300" />
+  <span className="mt-2 text-gray-300 group-hover:text-red-500 transition-colors duration-300">
+    TryHackMe
+  </span>
+</motion.a>
+
 
                 <motion.a
                   href="https://app.hackthebox.com/profile/2230478"
