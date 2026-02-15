@@ -33,7 +33,6 @@ import type { Engine } from "tsparticles-engine";
 
 interface Skill {
   name: string;
-  proficiency: number;
   icon: React.ReactNode;
 }
 
@@ -43,8 +42,8 @@ const App = () => {
 
   const programmingSkills: Skill[] = [
     { name: 'Python', icon: <FaPython className="text-xl" /> },
-    { name: 'C', proficiency: 85, icon: <SiC className="text-xl" /> },
-    { name: 'Bash', proficiency: 50, icon: <SiGnubash className="text-xl" /> },
+    { name: 'C',icon: <SiC className="text-xl" /> },
+    { name: 'Bash',icon: <SiGnubash className="text-xl" /> },
     { name: 'PowerShell', proficiency: 50, icon: <SiPowershell className="text-xl" /> },
   ];
 
