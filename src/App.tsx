@@ -14,6 +14,7 @@ import {
   FaSearch,
   FaWindows,
   FaSpider,
+  FaMobile
   FaLock,
   FaEye,
   FaNetworkWired as FaNetwork,
@@ -42,17 +43,17 @@ const App = () => {
 
   const programmingSkills: Skill[] = [
     { name: 'Python', icon: <FaPython className="text-xl" /> },
-    { name: 'C',icon: <SiC className="text-xl" /> },
     { name: 'Bash',icon: <SiGnubash className="text-xl" /> },
+    { name: 'C',icon: <SiC className="text-xl" /> },
     { name: 'PowerShell',icon: <SiPowershell className="text-xl" /> },
   ];
 
   const pentestingSkills: Skill[] = [
-    { name: 'Web Penetration Testing',icon: <FaGlobe className="text-xl" /> },
-    { name: 'API Penetration Testing',icon: <FaCode className="text-xl" /> },
-    { name: 'Active Directory Pentesting',icon: <FaWindows className="text-xl" /> },
-    { name: 'OSINT', icon: <FaSearch className="text-xl" /> },
+    { name: 'Active Directory Penetration Testing',icon: <FaWindows className="text-xl" /> },
     { name: 'Network Penetration Testing',icon: <FaNetworkWired className="text-xl" /> },
+    { name: 'OSINT', icon: <FaSearch className="text-xl" /> },
+    { name: 'Web Penetration Testing',icon: <FaGlobe className="text-xl" /> },
+    { name: 'Mobile Penetration Testing',icon: <FaMobile className="text-xl" /> },
   ];
 
   const networkingSkills: Skill[] = [
@@ -524,7 +525,7 @@ const SkillBar = ({ name, icon }: Skill) => (
                 >
                   <div className="flex items-center mb-6">
                     <FaShieldAlt className="text-2xl text-red-500 mr-3 pulse-effect" />
-                    <h3 className="text-xl font-semibold">Penetration Testing</h3>
+                    <h3 className="text-xl font-semibold">Offensive Security</h3>
                   </div>
                   {pentestingSkills.map((skill) => (
                     <SkillBar key={skill.name} {...skill} />
