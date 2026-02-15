@@ -27,6 +27,8 @@ import {
   SiPowershell, 
   SiWireshark,
   SiTryhackme,
+  SiBurpsuite,
+  SiMetasploit,
   SiHackthebox
 } from 'react-icons/si';
 import {
@@ -35,6 +37,13 @@ import {
 import { 
   VscAzure 
 } from "react-icons/vsc";
+import { 
+  GiHound,
+  GiEvilWings
+} from "react-icons/gi";
+import { 
+  RiComputerLine 
+} from "react-icons/ri";
 import './styles.css';
 import { Particles } from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
@@ -79,18 +88,14 @@ const App = () => {
 
 
   const securityTools = [
-    { name: 'Metasploit', icon: <FaBug className="text-2xl" />, category: 'Exploitation' },
-    { name: 'Burp Suite', icon: <FaSpider className="text-2xl" />, category: 'Web Security' },
-    { name: 'Nikto', icon: <FaSearch className="text-2xl" />, category: 'Web Security' },
-    { name: 'OWASP ZAP', icon: <FaShieldAlt className="text-2xl" />, category: 'Web Security' },
-    { name: 'Nessus', icon: <FaEye className="text-2xl" />, category: 'Vulnerability Scanner' },
-    { name: 'Snort', icon: <FaNetworkWired className="text-2xl" />, category: 'Network Security' },
-    { name: 'Splunk', icon: <FaChartLine className="text-2xl" />, category: 'SIEM' },
-    { name: 'Bloodhound', icon: <FaNetworkWired className="text-2xl" />, category: 'Active Directory' },
-    { name: 'SET', icon: <FaUserNinja className="text-2xl" />, category: 'Social Engineering' },
-    { name: 'Ettercap', icon: <FaNetwork className="text-2xl" />, category: 'Network Security' },
-    { name: 'Wireshark', icon: <SiWireshark className="text-2xl" />, category: 'Network Analysis' },
-    { name: 'Mimikatz', icon: <FaLock className="text-2xl" />, category: 'Credential Dumping' }
+    { name: 'Cobalt Strike', icon: <RiComputerLine className="text-2xl" /> },
+    { name: 'Bloodhound', icon: <GiHound className="text-2xl" />},
+    { name: 'Evilgnix', icon: <GiEvilWings className="text-2xl" />},
+    { name: 'Metasploit', icon: <SiMetasploit className="text-2xl" />},
+    { name: 'Burp Suite', icon: <SiBurpsuite className="text-2xl" />},
+    { name: 'Wireshark', icon: <SiWireshark className="text-2xl" />},
+    { name: 'Nessus', icon: <FaEye className="text-2xl" />},
+    { name: 'Mimikatz', icon: <FaLock className="text-2xl" />}
   ];
 
   const projects = [
