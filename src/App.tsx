@@ -11,7 +11,6 @@ import {
   FaGlobe,
   FaSearch,
   FaWindows,
-  FaNetworkWired,
   FaBattleNet,
   FaMobile,
   FaLock,
