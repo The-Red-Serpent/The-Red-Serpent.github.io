@@ -9,18 +9,14 @@ import {
   FaPython,
   FaNetworkWired,
   FaShieldAlt,
-  FaBug,
   FaGlobe,
   FaSearch,
   FaWindows,
-  FaSpider,
   FaMobile,
   FaLock,
   FaEye,
   FaNetworkWired as FaNetwork,
-  FaChartLine,
   FaWifi,
-  FaUserNinja
 } from 'react-icons/fa';
 import {  
   SiGnubash, 
@@ -31,6 +27,7 @@ import {
   SiMetasploit,
   SiHackthebox
 } from 'react-icons/si';
+
 import {
   TbBrandCpp 
 } from "react-icons/tb";
@@ -608,7 +605,6 @@ const SkillBar = ({ name, icon }: Skill) => (
                       </div>
                       <h3 className="text-lg font-semibold text-gray-200 text-center">{tool.name}</h3>
                       <span className="text-xs text-gray-400 px-3 py-1 rounded-full bg-gray-800/50 backdrop-blur-sm">
-                        {tool.category}
                       </span>
                     </div>
                   </motion.div>
