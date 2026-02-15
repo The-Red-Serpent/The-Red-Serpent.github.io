@@ -84,14 +84,14 @@ const App = () => {
 
 
   const securityTools = [
-    { name: 'Cobalt Strike', icon: <RiComputerLine className="text-2xl" /> },
-    { name: 'Bloodhound', icon: <GiHound className="text-2xl" />},
-    { name: 'Evilgnix', icon: <GiEvilWings className="text-2xl" />},
-    { name: 'Metasploit', icon: <SiMetasploit className="text-2xl" />},
-    { name: 'Burp Suite', icon: <SiBurpsuite className="text-2xl" />},
-    { name: 'Wireshark', icon: <SiWireshark className="text-2xl" />},
-    { name: 'Nessus', icon: <FaEye className="text-2xl" />},
-    { name: 'Mimikatz', icon: <FaLock className="text-2xl" />}
+    { name: 'Cobalt Strike', icon: <RiComputerLine className="text-4xl" /> },
+    { name: 'Bloodhound', icon: <GiHound className="text-4xl" />},
+    { name: 'Evilgnix', icon: <GiEvilWings className="text-4xl" />},
+    { name: 'Metasploit', icon: <SiMetasploit className="text-4xl" />},
+    { name: 'Burp Suite', icon: <SiBurpsuite className="text-4xl" />},
+    { name: 'Wireshark', icon: <SiWireshark className="text-4xl" />},
+    { name: 'Nessus', icon: <FaEye className="text-4xl" />},
+    { name: 'Mimikatz', icon: <FaLock className="text-4xl" />}
   ];
 
   const projects = [
