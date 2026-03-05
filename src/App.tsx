@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import {
   FaGithub, FaInstagram, FaCode, FaPython, FaShieldAlt,
-  FaGlobe, FaSearch, FaWindows, FaMobile, FaLock, FaEye, FaWifi,
+  FaGlobe, FaSearch, FaWindows, FaBattleNet, FaMobile, FaLock, FaEye, FaWifi,
 } from 'react-icons/fa';
 import {
   SiGnubash, SiWireshark, SiTryhackme, SiBurpsuite, SiMetasploit,
@@ -73,7 +73,7 @@ const App = () => {
 
   const pentestingSkills: Skill[] = useMemo(() => [
     { name: 'Active Directory', icon: <FaWindows /> },
-    { name: 'Network',          icon: <FaGlobe /> },
+    { name: 'Network',          icon: <FaBattleNet /> },
     { name: 'Wi-Fi',            icon: <FaWifi /> },
     { name: 'OSINT',            icon: <FaSearch /> },
     { name: 'Web',              icon: <FaGlobe /> },
