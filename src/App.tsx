@@ -349,7 +349,7 @@ const App = () => {
                 </motion.h2>
 
                 <motion.p
-                  className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0"
+                  className="text-white text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0"
                   variants={fadeUp} custom={0.30}
                 >
                   Red Team Operator focused on adversary simulation and offensive security testing
