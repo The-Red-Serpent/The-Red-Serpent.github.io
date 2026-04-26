@@ -433,7 +433,7 @@ const App = () => {
           {/* TOOLS ──────────────────────────────────────────────────────────── */}
           <section id="tools" className="py-14 sm:py-20 lg:py-28">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <SectionHeading>Security Arsenal</SectionHeading>
+              <SectionHeading>Tools</SectionHeading>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-3 sm:gap-4">
                 {securityTools.map((tool, i) => (
                   <motion.div
@@ -570,7 +570,6 @@ const App = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.12 }}
               >
-                Connect with me on various platforms
               </motion.p>
               <motion.div
                 className="flex flex-wrap justify-center gap-8 sm:gap-12 lg:gap-16"
