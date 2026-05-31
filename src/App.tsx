@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import {
-  FaGithub, FaInstagram, FaCode, FaPython, FaShieldAlt,
+  FaGithub, FaCode, FaPython, FaShieldAlt,
   FaGlobe, FaSearch, FaWindows, FaBattleNet, FaMobile, FaLock, FaEye, FaWifi,
 } from 'react-icons/fa';
 import {
@@ -144,7 +144,6 @@ const App = () => {
 
   const socialLinks = useMemo(() => [
     { href: 'https://github.com/The-Red-Serpent',         icon: <FaGithub />,    label: 'GitHub' },
-    { href: 'https://instagram.com/the_red_serpent',      icon: <FaInstagram />, label: 'Instagram' },
     { href: 'https://tryhackme.com/p/theredserpent',      icon: <SiTryhackme />, label: 'TryHackMe' },
     { href: 'https://app.hackthebox.com/profile/2230478', icon: <SiHackthebox />,label: 'HackTheBox' },
   ], []);
