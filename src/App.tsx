@@ -145,7 +145,7 @@ const App = () => {
   const socialLinks = useMemo(() => [
     { href: 'https://github.com/The-Red-Serpent',         icon: <FaGithub />,    label: 'GitHub' },
     { href: 'https://tryhackme.com/p/theredserpent',      icon: <SiTryhackme />, label: 'TryHackMe' },
-    { href: 'https://app.hackthebox.com/public/users/2230478', icon: <SiHackthebox />,label: 'HackTheBox' },
+    { href: 'https://hackthebox.com/public/users/2230478?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs', icon: <SiHackthebox />,label: 'HackTheBox' },
   ], []);
 
   // ── Particles ────────────────────────────────────────────────────────────
