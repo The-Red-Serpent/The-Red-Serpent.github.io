@@ -561,7 +561,7 @@ const App = () => {
           {/* CONTACT ────────────────────────────────────────────────────────── */}
           <section id="contact" className="py-14 sm:py-20 lg:py-28">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-              <SectionHeading>Socials</SectionHeading>
+              <SectionHeading>Socials </SectionHeading>
               <motion.p
                 className="text-gray-400 text-sm sm:text-base lg:text-lg mb-10 sm:mb-14"
                 initial={{ opacity: 0, y: 16 }}
