@@ -138,7 +138,7 @@ const App = () => {
     { title: 'Certified Red Team Infra Dev',            issuer: 'Cyberwarfare Labs', badgeUrl: 'https://templates.images.credential.net/17043570231479652261133221341593.png' },
     { title: 'Certified Network Security Practitioner', issuer: 'The SecOps Group',  badgeUrl: '/cnsp.webp' },
     { title: 'Cyber Threat Intelligence 101',           issuer: 'arcx.io',           badgeUrl: '/arc.webp' },
-    { title: 'Certified Red Team Operator',             issuer: 'Pursuing',          badgeUrl: '/CRTO.webp' },
+    { title: 'Certified Red Team Operator',             issuer: 'Zero Point Security', badgeUrl: '/CRTO.webp' },
     { title: 'Certified Red Team Lead',                 issuer: 'Pursuing',          badgeUrl: '/CRTL.webp' },
   ], []);
 
