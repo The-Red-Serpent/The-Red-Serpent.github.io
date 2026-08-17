@@ -7,9 +7,9 @@ import {
 } from 'react-icons/fa';
 import {
   SiGnubash, SiWireshark, SiTryhackme, SiBurpsuite, SiMetasploit,
-  SiOwasp, SiMalwarebytes, SiHackthebox, SiPrimefaces,
+  SiOwasp, SiMalwarebytes, SiC, SiHackthebox, SiPrimefaces,
 } from 'react-icons/si';
-import { TbBrandC, TbBrandPowershell } from 'react-icons/tb';
+import { TbBrandPowershell } from 'react-icons/tb';
 import { VscAzure } from 'react-icons/vsc';
 import {
   GiHound, GiAngularSpider, GiEvilWings, GiSemiClosedEye, GiSwordsEmblem,
@@ -67,7 +67,7 @@ const App = () => {
   const programmingSkills: Skill[] = useMemo(() => [
     { name: 'Python',     icon: <FaPython /> },
     { name: 'Bash',       icon: <SiGnubash /> },
-    { name: 'C++',        icon: <TbBrandC /> },
+    { name: 'C++',        icon: <SiC /> },
     { name: 'PowerShell', icon: <TbBrandPowershell /> },
   ], []);
 
