@@ -9,7 +9,7 @@ import {
   SiGnubash, SiWireshark, SiTryhackme, SiBurpsuite, SiMetasploit,
   SiOwasp, SiMalwarebytes, SiHackthebox, SiPrimefaces,
 } from 'react-icons/si';
-import { TbBrandCpp, TbBrandPowershell } from 'react-icons/tb';
+import { TbBrandC, TbBrandPowershell } from 'react-icons/tb';
 import { VscAzure } from 'react-icons/vsc';
 import {
   GiHound, GiAngularSpider, GiEvilWings, GiSemiClosedEye, GiSwordsEmblem,
