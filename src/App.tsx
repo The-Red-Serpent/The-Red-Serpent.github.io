@@ -7,9 +7,8 @@ import {
 } from 'react-icons/fa';
 import {
   SiGnubash, SiWireshark, SiTryhackme, SiBurpsuite, SiMetasploit,
-  SiOwasp, SiMalwarebytes, SiC, SiHackthebox, SiPrimefaces,
+  SiOwasp, SiMalwarebytes, SiC, SiHackthebox, SiPrimefaces,SiAssemblyscript,
 } from 'react-icons/si';
-import { TbBrandPowershell } from 'react-icons/tb';
 import { VscAzure } from 'react-icons/vsc';
 import {
   GiHound, GiAngularSpider, GiEvilWings, GiSemiClosedEye, GiSwordsEmblem,
@@ -65,10 +64,10 @@ const App = () => {
 
   // ── Static data ─────────────────────────────────────────────────────────
   const programmingSkills: Skill[] = useMemo(() => [
-    { name: 'Python',     icon: <FaPython /> },
+    { name: 'Assembly',     icon: <SiAssemblyscript /> },
+    { name: 'C',        icon: <SiC /> },
+    { name: 'Python',        icon: <FaPython /> },
     { name: 'Bash',       icon: <SiGnubash /> },
-    { name: 'C++',        icon: <SiC /> },
-    { name: 'PowerShell', icon: <TbBrandPowershell /> },
   ], []);
 
   const pentestingSkills: Skill[] = useMemo(() => [
