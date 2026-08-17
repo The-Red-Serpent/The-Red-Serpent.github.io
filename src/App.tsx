@@ -67,7 +67,7 @@ const App = () => {
   const programmingSkills: Skill[] = useMemo(() => [
     { name: 'Python',     icon: <FaPython /> },
     { name: 'Bash',       icon: <SiGnubash /> },
-    { name: 'C++',        icon: <TbBrandCpp /> },
+    { name: 'C++',        icon: <TbBrandC /> },
     { name: 'PowerShell', icon: <TbBrandPowershell /> },
   ], []);
 
