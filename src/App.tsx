@@ -235,19 +235,22 @@ const App = () => {
 
               {/* Logo */}
               <button
-  onClick={() => window.location.reload()}
-  className="flex items-center gap-2 sm:gap-3 shrink-0 cursor-pointer"
-  aria-label="Refresh page"
->
-  <img
-    src="/snake.webp"
-    alt="Logo"
-    className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
-  />
-  <span className="text-base sm:text-xl font-bold rainbow-text whitespace-nowrap">
-    The Red Serpent
-  </span>
-</button>
+                onClick={() => {
+                  window.location.href = '/';
+                }}
+                className="flex items-center gap-2 sm:gap-3 shrink-0 cursor-pointer"
+                aria-label="Refresh page and go to top"
+                >
+                <img
+                  src="/snake.webp"
+                  alt="Logo"
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                />
+              
+                <span className="text-base sm:text-xl font-bold rainbow-text whitespace-nowrap">
+                  The Red Serpent
+                </span>
+              </button>
 
               {/* Desktop nav */}
               <div className="hidden md:flex items-center gap-5 lg:gap-9">
